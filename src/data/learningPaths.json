@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Desarrollo Front-End",
+      "description": "Conviértete en el arquitecto de experiencias digitales. Aprende HTML, CSS, JavaScript y los secretos de frameworks como React y Angular. Proyectos prácticos te guiarán hacia el dominio de la creación de interfaces cautivadoras. ¡Inicia tu viaje hacia el desarrollo front-end hoy mismo!",
+      "image": "../images/pathFrontImg.png",
+      "path": "desarrollo-font-end",
+      "whyStudyDescription": "El desarrollo web front-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.",
+      "whyStudyRasons": [
+        "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+        "Por otra parte, «psicoanálisis» se refiere también a la terapia psicoanalítica misma, es decir, a un conjunto de procedimientos y técnicas terapéuticas que se desarrollan a partir de esta teoría para el tratamiento de patologías mentales. Finalmente, «psicoanálisis» puede referirse además al método psicoanalítico: un método de investigación que ha sido aplicado, más allá de la psicología clínica individual, al análisis de fenómenos culturales, por ejemplo en etnología y antropología (entre otras disciplinas).",
+        "El desarrollo del psicoanálisis es permanente en estos tres aspectos por parte de investigadores y clínicos, si bien cabe remarcar que tal segmentación del campo psicoanalítico no puede ser otra cosa que una esquematización descriptiva, y que en ningún caso da cuenta de la estructura propia del psicoanálisis donde teoría y práctica se encuentran ligadas sin que pueda darse la una sin la otra. Freud sostuvo que una de las glorias del psicoanálisis era la coincidencia de investigación y tratamiento si bien aclara que la técnica de ambas difiere.",
+        "El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico. Si el psicoanálisis puede ser considerado una teoría científica es un asunto que en círculos académicos y profesionales continúa siendo controvertido. El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Desarrollo Back-End",
+      "description": "Conviértete en el arquitecto de experiencias digitales. Aprende HTML, CSS, JavaScript y los secretos de frameworks como React y Angular. Proyectos prácticos te guiarán hacia el dominio de la creación de interfaces cautivadoras. ¡Inicia tu viaje hacia el desarrollo front-end hoy mismo!",
+      "image": "../images/pathFrontImg.png",
+      "path": "desarrollo-back-end",
+      "whyStudyDescription": "El desarrollo web front-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.",
+      "whyStudyRasons": [
+        "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+        "Por otra parte, «psicoanálisis» se refiere también a la terapia psicoanalítica misma, es decir, a un conjunto de procedimientos y técnicas terapéuticas que se desarrollan a partir de esta teoría para el tratamiento de patologías mentales. Finalmente, «psicoanálisis» puede referirse además al método psicoanalítico: un método de investigación que ha sido aplicado, más allá de la psicología clínica individual, al análisis de fenómenos culturales, por ejemplo en etnología y antropología (entre otras disciplinas).",
+        "El desarrollo del psicoanálisis es permanente en estos tres aspectos por parte de investigadores y clínicos, si bien cabe remarcar que tal segmentación del campo psicoanalítico no puede ser otra cosa que una esquematización descriptiva, y que en ningún caso da cuenta de la estructura propia del psicoanálisis donde teoría y práctica se encuentran ligadas sin que pueda darse la una sin la otra. Freud sostuvo que una de las glorias del psicoanálisis era la coincidencia de investigación y tratamiento si bien aclara que la técnica de ambas difiere.",
+        "El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico. Si el psicoanálisis puede ser considerado una teoría científica es un asunto que en círculos académicos y profesionales continúa siendo controvertido. El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Análisis de Datos",
+      "description": "Conviértete en el arquitecto de experiencias digitales. Aprende HTML, CSS, JavaScript y los secretos de frameworks como React y Angular. Proyectos prácticos te guiarán hacia el dominio de la creación de interfaces cautivadoras. ¡Inicia tu viaje hacia el desarrollo front-end hoy mismo!",
+      "image": "../images/pathFrontImg.png",
+      "path": "analisis-de-datos",
+      "whyStudyDescription": "El desarrollo web front-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.",
+      "whyStudyRasons": [
+        "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+        "Por otra parte, «psicoanálisis» se refiere también a la terapia psicoanalítica misma, es decir, a un conjunto de procedimientos y técnicas terapéuticas que se desarrollan a partir de esta teoría para el tratamiento de patologías mentales. Finalmente, «psicoanálisis» puede referirse además al método psicoanalítico: un método de investigación que ha sido aplicado, más allá de la psicología clínica individual, al análisis de fenómenos culturales, por ejemplo en etnología y antropología (entre otras disciplinas).",
+        "El desarrollo del psicoanálisis es permanente en estos tres aspectos por parte de investigadores y clínicos, si bien cabe remarcar que tal segmentación del campo psicoanalítico no puede ser otra cosa que una esquematización descriptiva, y que en ningún caso da cuenta de la estructura propia del psicoanálisis donde teoría y práctica se encuentran ligadas sin que pueda darse la una sin la otra. Freud sostuvo que una de las glorias del psicoanálisis era la coincidencia de investigación y tratamiento si bien aclara que la técnica de ambas difiere.",
+        "El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico. Si el psicoanálisis puede ser considerado una teoría científica es un asunto que en círculos académicos y profesionales continúa siendo controvertido. El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Manejo de Bases de Datos",
+      "description": "Conviértete en el arquitecto de experiencias digitales. Aprende HTML, CSS, JavaScript y los secretos de frameworks como React y Angular. Proyectos prácticos te guiarán hacia el dominio de la creación de interfaces cautivadoras. ¡Inicia tu viaje hacia el desarrollo front-end hoy mismo!",
+      "image": "../images/pathFrontImg.png",
+      "path": "manejo-de-bases-de-datos",
+      "whyStudyDescription": "El desarrollo web front-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.",
+      "whyStudyRasons": [
+        "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+        "Por otra parte, «psicoanálisis» se refiere también a la terapia psicoanalítica misma, es decir, a un conjunto de procedimientos y técnicas terapéuticas que se desarrollan a partir de esta teoría para el tratamiento de patologías mentales. Finalmente, «psicoanálisis» puede referirse además al método psicoanalítico: un método de investigación que ha sido aplicado, más allá de la psicología clínica individual, al análisis de fenómenos culturales, por ejemplo en etnología y antropología (entre otras disciplinas).",
+        "El desarrollo del psicoanálisis es permanente en estos tres aspectos por parte de investigadores y clínicos, si bien cabe remarcar que tal segmentación del campo psicoanalítico no puede ser otra cosa que una esquematización descriptiva, y que en ningún caso da cuenta de la estructura propia del psicoanálisis donde teoría y práctica se encuentran ligadas sin que pueda darse la una sin la otra. Freud sostuvo que una de las glorias del psicoanálisis era la coincidencia de investigación y tratamiento si bien aclara que la técnica de ambas difiere.",
+        "El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico. Si el psicoanálisis puede ser considerado una teoría científica es un asunto que en círculos académicos y profesionales continúa siendo controvertido. El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Pensamiento Lógico",
+      "description": "Conviértete en el arquitecto de experiencias digitales. Aprende HTML, CSS, JavaScript y los secretos de frameworks como React y Angular. Proyectos prácticos te guiarán hacia el dominio de la creación de interfaces cautivadoras. ¡Inicia tu viaje hacia el desarrollo front-end hoy mismo!",
+      "image": "../images/pathFrontImg.png",
+      "path": "pensamiento-logico",
+      "whyStudyDescription": "El desarrollo web front-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación.",
+      "whyStudyRasons": [
+        "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+        "Por otra parte, «psicoanálisis» se refiere también a la terapia psicoanalítica misma, es decir, a un conjunto de procedimientos y técnicas terapéuticas que se desarrollan a partir de esta teoría para el tratamiento de patologías mentales. Finalmente, «psicoanálisis» puede referirse además al método psicoanalítico: un método de investigación que ha sido aplicado, más allá de la psicología clínica individual, al análisis de fenómenos culturales, por ejemplo en etnología y antropología (entre otras disciplinas).",
+        "El desarrollo del psicoanálisis es permanente en estos tres aspectos por parte de investigadores y clínicos, si bien cabe remarcar que tal segmentación del campo psicoanalítico no puede ser otra cosa que una esquematización descriptiva, y que en ningún caso da cuenta de la estructura propia del psicoanálisis donde teoría y práctica se encuentran ligadas sin que pueda darse la una sin la otra. Freud sostuvo que una de las glorias del psicoanálisis era la coincidencia de investigación y tratamiento si bien aclara que la técnica de ambas difiere.",
+        "El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico. Si el psicoanálisis puede ser considerado una teoría científica es un asunto que en círculos académicos y profesionales continúa siendo controvertido. El psicoanálisis moderno se caracteriza por el pluralismo teórico, metódico y terapéutico."
+      ]
+    }
+  ]
+}

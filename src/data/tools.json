@@ -1,0 +1,42 @@
+{
+  "data": [
+   {
+    "tools": [
+      "Javascript",
+      "Python",
+      "Java",
+      "PHP",
+      "C",
+      "ReactJs",
+      "AngularJs",
+      "VueJs",
+      "Django",
+      "Flask",
+      "FastAPI",
+      "Pandas",
+      "Numpy",
+      "Excel",
+      "Matplotlib",
+      "R",
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "Bootstrap",
+      "SASS",
+      "MySQL",
+      "PostgreSQL",
+      "OracleSQL",
+      "Laravel",
+      "Docker",
+      "Git/GitHub",
+      "Typescript",
+      "NextJS",
+      "NodeJS",
+      "ExpressJS",
+      "NestJS",
+      "SpringBot",
+      ".NET"
+    ]
+   }
+  ]
+}

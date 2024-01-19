@@ -1,0 +1,118 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Curso Básico de Python",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "Python",
+      "dificulty": "Intermedio",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Back-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Curso Básico de Javascript",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "Javascript",
+      "dificulty": "Basico",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Front-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Curso Básico de PHP",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "PHP",
+      "dificulty": "Basico",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Back-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Curso Básico de Java",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "Java",
+      "dificulty": "Basico",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Back-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Curso Básico de ReactJs",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "ReactJs",
+      "dificulty": "Basico",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Front-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Curso Básico de Angular",
+      "origin": "YouTube",
+      "popularity": "85%",
+      "tool": "Angular",
+      "dificulty": "Basico",
+      "image": "../images/test.png",
+      "url": "https://teest.com/information",
+      "learningPath": "Desarrollo Front-End",
+      "definition": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "whyLearnIt": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "salary": "El concepto de «psicoanálisis» designa, por una parte, aquel modelo teórico descriptivo y explicativo de los mecanismos, procesos y fenómenos implicados en la vida anímica humana. Este modelo se basó inicialmente en la experiencia de Sigmund Freud en el tratamiento clínico de pacientes que presentan histerias, fobias y diversos padecimientos psíquicos y ha tenido un amplio desarrollo teórico posterior con el aporte de muchos teóricos del psicoanálisis.",
+      "recommendedReadings": [
+        "https://teest.com/information",
+        "https://teest.com/information",
+        "https://teest.com/information"
+      ]
+    }
+  ]
+}

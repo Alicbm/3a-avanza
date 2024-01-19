@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "dificulty": "Basico",
+      "tool": "Javascript",
+      "title": "Examen de Javascript",
+      "exams": [
+        {
+          "id": 1,
+          "question": "Qué es javascript?",
+          "opcionA": ["Un lenguaje de programación", true],
+          "opcionB": ["Un idioma extranjero", false],
+          "opcionC": ["Un editor de codigo", false],
+          "opcionD": ["No tengo idea", false]
+        },
+        {
+          "id": 2,
+          "question": "Qué es una función en javascript?",
+          "opcionA": ["Esta es", true],
+          "opcionB": ["Esta no es", false],
+          "opcionC": ["Esta no tampoco", false],
+          "opcionD": ["Ni esta", false]
+        },
+        {
+          "id": 3,
+          "question": "Javascript es un lengujae asincrono?",
+          "opcionA": ["Verdadero", true],
+          "opcionB": ["Falso", false],
+          "opcionC": ["", false],
+          "opcionD": ["", false]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "dificulty": "Intermedio",
+      "tool": "Javascript",
+      "title": "Examen de Javascript",
+      "exams": [
+        {
+          "id": 1,
+          "question": "Qué es javascript?",
+          "opcionA": ["Un lenguaje de programación", true],
+          "opcionB": ["Un idioma extranjero", false],
+          "opcionC": ["Un editor de codigo", false],
+          "opcionD": ["No tengo idea", false]
+        },
+        {
+          "id": 2,
+          "question": "Qué es una función en javascript?",
+          "opcionA": ["Esta es", true],
+          "opcionB": ["Esta no es", false],
+          "opcionC": ["Esta tampoco", false],
+          "opcionD": ["NI esta", false]
+        },
+        {
+          "id": 3,
+          "question": "Javascript es un lengujae asincrono?",
+          "opcionA": ["Verdadero", true],
+          "opcionB": ["Falso", false],
+          "opcionC": ["", false],
+          "opcionD": ["", false]
+        }
+      ]
+    }
+  ]
+}
