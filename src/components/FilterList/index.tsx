@@ -76,7 +76,7 @@ function FilterList({ name, text, list, setItem }: Props) {
               />
             </div>
 
-            <ul className="max-h-[300px] overflow-y-scroll">
+            <ul className="max-h-[200px] overflow-y-scroll">
               {filterItems.map((item) => (
                 <li
                   key={item.text}

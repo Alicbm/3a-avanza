@@ -1,4 +1,4 @@
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from 'react-icons/io';
 
 function FrontPage() {
   return (
@@ -14,7 +14,9 @@ function FrontPage() {
         </p>
       </div>
       <div className="border-2 rounded-[50%] border-blue absolute bottom-10 right-20 p-2 cursor-pointer">
-        <span className="text-blue text-[60px]"><IoIosArrowDown /></span>
+        <span className="text-blue text-[50px]">
+          <IoIosArrowDown />
+        </span>
       </div>
     </div>
   );

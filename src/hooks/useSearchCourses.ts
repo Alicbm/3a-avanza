@@ -1,20 +1,27 @@
 /* eslint-disable import/prefer-default-export */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { data } from '../data/courses.json';
+import { useFilterCourses } from './useFilterCourses';
 
 export const useSearchCourses = () => {
+  const { newData, path, tool, level, setPath, setTool, setLevel } =
+    useFilterCourses(data);
+
   const [search, setSearch] = useState('');
+  const [dataFiltered, setDataFiltered] = useState(data);
   const [similarSearch, setSimilarSearch] = useState('');
 
-  const filteredCourses = data.filter(
-    (course) =>
-      course.name.toLowerCase().includes(search.toLowerCase()) ||
-      course.definition.toLowerCase().includes(search.toLowerCase()) ||
-      course.learningPath.toLowerCase().includes(search.toLowerCase()) ||
-      course.tool.toLowerCase().includes(search.toLowerCase()) ||
-      course.origin.toLowerCase().includes(search.toLowerCase()) ||
-      course.dificulty.toLowerCase().includes(search.toLowerCase()),
-  );
+  useEffect(() => {
+    const filteredCourses = data.filter((course) =>
+      course.name.toLowerCase().includes(search.toLowerCase()),
+    );
+
+    setDataFiltered(filteredCourses);
+  }, [search]);
+
+  useEffect(() => {
+    setDataFiltered(newData);
+  }, [path, tool, level]);
 
   const filterNamesSearched = data.filter((course) =>
     course.name.toLowerCase().includes(similarSearch.toLowerCase()),
@@ -24,9 +31,13 @@ export const useSearchCourses = () => {
   return {
     search,
     setSearch,
-    filteredCourses,
+    dataFiltered,
     resultNamesSearched,
     similarSearch,
     setSimilarSearch,
+
+    setPath,
+    setTool,
+    setLevel,
   };
 };

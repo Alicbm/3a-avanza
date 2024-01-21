@@ -5,7 +5,7 @@ import FrontPage from './FrontPage';
 import { data as toolsData } from '../../data/tools.json';
 import { useSearchCourses } from '../../hooks/useSearchCourses';
 import NotResults from '../../components/NotResults';
-import { useFilterCourses } from '../../hooks/useFilterCourses';
+import { styles } from '../../styles';
 
 type ListType = {
   text: string;
@@ -13,16 +13,18 @@ type ListType = {
 
 function CoursesPath() {
   const {
-    filteredCourses,
+    dataFiltered,
     setSearch,
     search,
     setSimilarSearch,
     similarSearch,
     resultNamesSearched,
+    setPath,
+    setTool,
+    setLevel,
   } = useSearchCourses();
 
-  const { setItem } = useFilterCourses()
-
+  
   const resData: ListType[] = [];
 
   toolsData[0].tools.map((tool) =>
@@ -31,9 +33,13 @@ function CoursesPath() {
     }),
   );    
 
+  const styleFrontPage = {
+    background: 'linear-gradient(#060513, #090b20, #090b20)',
+  }
+
   return (
     <div>
-      <div className="bg-black">
+      <div className="bg-black" style={styles}>
         <FrontPage>
           <InputSearch
             placeholder="Burcar Cursos..."
@@ -44,10 +50,10 @@ function CoursesPath() {
           />
         </FrontPage>
       </div>
-      <div className="bg-darkBlue">
-        <AllCourses filteredCourses={filteredCourses} search={search}>
+      <div className="bg-darkBlue" style={styleFrontPage}>
+        <AllCourses filteredCourses={dataFiltered} search={search}>
           <FilterList
-            setItem={setItem}
+            setItem={setPath}
             name="Rutas"
             text="Todas las rutas"
             list={[
@@ -59,22 +65,22 @@ function CoursesPath() {
             ]}
           />
           <FilterList
-            setItem={setItem}
+            setItem={setTool}
             name="Herramientas"
             text="Todas las herramientas"
             list={resData}
           />
           <FilterList
-            setItem={setItem}
+            setItem={setLevel}
             name="Niveles"
             text="Todos los niveles"
             list={[
-              { text: 'Básico' },
+              { text: 'Basico' },
               { text: 'Intermedio' },
               { text: 'Avanzado' },
             ]}
           />
-          {filteredCourses.length === 0 && <NotResults searched={search} />}
+          {dataFiltered.length === 0 && <NotResults searched={search} />}
         </AllCourses>
       </div>
     </div>

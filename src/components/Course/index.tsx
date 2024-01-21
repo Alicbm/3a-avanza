@@ -9,9 +9,10 @@ type Props = {
   name: string;
   origin: string;
   popularity: string;
+  dificulty: string;
 };
 
-function Course({ id, name, origin, popularity }: Props) {
+function Course({ id, name, origin, popularity, dificulty }: Props) {
   const { setCourse } = useContext(AppContext);
   const navigate = useNavigate();
 
@@ -43,7 +44,7 @@ function Course({ id, name, origin, popularity }: Props) {
       </div>
       <div className="px-4 py-2">
         <h4 className="font-title text-white text-lg">{name}</h4>
-        <p className="font-title text-gray text-md">{origin}</p>
+        <p className="font-title text-gray text-md">{dificulty} - {origin}</p>
         <p className="text-blue text-sm">{popularity} Popularidad</p>
       </div>
     </div>

@@ -97,10 +97,10 @@
     },
     {
       "id": 6,
-      "name": "Curso Básico de Angular",
+      "name": "Curso Básico de AngularJs",
       "origin": "YouTube",
       "popularity": "85%",
-      "tool": "Angular",
+      "tool": "AngularJs",
       "dificulty": "Basico",
       "image": "../images/test.png",
       "url": "https://teest.com/information",

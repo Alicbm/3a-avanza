@@ -37,6 +37,7 @@ function AllCourses({ children, filteredCourses, search }: Props) {
                 name={course.name}
                 origin={course.origin}
                 popularity={course.popularity}
+                dificulty={course.dificulty}
               />
             ))}
       </div>

@@ -1,36 +1,42 @@
 /* eslint-disable import/prefer-default-export */
 import { useState } from 'react';
-import { data } from '../data/courses.json';
+import { CoursesIT } from '../types';
 
-export const useFilterCourses = () => {
-  const [item, setItem] = useState('');
-  // const [tools, setTools] = useState('');
-  // const [levels, setLevels] = useState('');
+export const useFilterCourses = (data: CoursesIT[]) => {
+  const [path, setPath] = useState('');
+  const [tool, setTool] = useState('');
+  const [level, setLevel] = useState('');
 
-  const filterCourses = data.filter(
-    (course) =>
-      course.learningPath.toLowerCase() === item.toLowerCase() ||
-      course.tool.toLowerCase() === item.toLowerCase() ||
-      course.dificulty.toLowerCase() === item.toLowerCase(),
-  );
+  let newData;
 
-  // const filterTools = data.filter(
-  //   (course) => course.learningPath.toLowerCase() === tools.toLowerCase(),
-  // );
-
-  // const filterLevels = data.filter(
-  //   (course) => course.learningPath.toLowerCase() === levels.toLowerCase(),
-  // );
+  if (path.length !== 0) {
+    newData = data.filter((course) => {
+      if (tool.length > 0 && level.length > 0) {
+        return (
+          course.learningPath.toLowerCase() === path.toLowerCase() &&
+          course.tool.toLowerCase() === tool.toLowerCase() &&
+          course.dificulty.toLowerCase() === level.toLowerCase()
+        );
+      }
+      if (tool.length > 0) {
+        return (
+          course.learningPath.toLowerCase() === path.toLowerCase() &&
+          course.tool.toLowerCase() === tool.toLowerCase()
+        );
+      }
+      return course.learningPath.toLowerCase() === path.toLowerCase();
+    });
+  } else {
+    newData = data;
+  }
 
   return {
-    item,
-    setItem,
-    // tools,
-    // setTools,
-    // levels,
-    // setLevels,
-    filterCourses,
-    // filterTools,
-    // filterLevels,
+    newData,
+    path,
+    setPath,
+    tool,
+    setTool,
+    level,
+    setLevel,
   };
 };

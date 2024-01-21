@@ -1,8 +1,12 @@
 import { FaUserCircle, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { styles } from '../../styles';
 
 function Footer() {
   return (
-    <footer className='relative w-full h-[60vh] bg-black text-white font-md pt-[50px]'>
+    <footer 
+      className='relative w-full h-[60vh] bg-black text-white font-md pt-[50px]'
+      style={styles}
+    >
       <div className='w-[80%] max-w-[1200px] grid grid-cols-7 gap-10 mx-auto'>
         <div className='col-span-2'>
           <div className='text-5xl font-title text-blue mb-4'>AAA</div>
