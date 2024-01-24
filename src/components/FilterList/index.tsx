@@ -4,24 +4,22 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useState } from 'react';
 
-type ListType = {
-  text: string;
-};
-
 type Props = {
-  text: string;
-  list: ListType[];
+  // initialValue: string;
+  list: string[];
   name: string;
   setItem: (arg: string) => void;
+  valueList: string
+  setValueList: (arg: string) => void
 };
 
-function FilterList({ name, text, list, setItem }: Props) {
+function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
   const [stateList, setStateList] = useState(false);
-  const [valueList, setValueList] = useState(text);
+  // const [valueList, setValueList] = useState(initialValue);
   const [itemSearch, setItemSearch] = useState('');
 
   const filterItems = list.filter(
-    (item: ListType) => item.text.toLowerCase().includes(itemSearch) === true,
+    (item: string) => item.toLowerCase().includes(itemSearch) === true,
   );
 
   return (
@@ -79,15 +77,15 @@ function FilterList({ name, text, list, setItem }: Props) {
             <ul className="max-h-[200px] overflow-y-scroll">
               {filterItems.map((item) => (
                 <li
-                  key={item.text}
+                  key={item}
                   onClick={() => {
                     setStateList(false);
-                    setValueList(item.text);
-                    setItem(item.text)
+                    setValueList(item);
+                    setItem(item);
                   }}
                   className="text-white text-md border-b border-blue p-[5px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
                 >
-                  {item.text}
+                  {item}
                 </li>
               ))}
             </ul>

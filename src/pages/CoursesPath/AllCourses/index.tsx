@@ -13,10 +13,8 @@ function AllCourses({ children, filteredCourses, search }: Props) {
 
   return (
     <div className="max-w-[1200px] w-full grid gap-6 py-10 mx-auto overflow-hidden">
-      <div className="flex justify-center items-center gap-6">
+      <div>
         {allChildren[0]}
-        {allChildren[1]}
-        {allChildren[2]}
       </div>
 
       <div>
@@ -28,8 +26,8 @@ function AllCourses({ children, filteredCourses, search }: Props) {
       </div>
 
       <div className="grid grid-cols-4 gap-6">
-        {allChildren[3]
-          ? allChildren[3]
+        {allChildren[1]
+          ? allChildren[1]
           : filteredCourses.map((course) => (
               <Course
                 key={course.id}

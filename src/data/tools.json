@@ -1,42 +1,50 @@
 {
   "data": [
-   {
-    "tools": [
-      "Javascript",
-      "Python",
-      "Java",
-      "PHP",
-      "C",
-      "ReactJs",
-      "AngularJs",
-      "VueJs",
-      "Django",
-      "Flask",
-      "FastAPI",
-      "Pandas",
-      "Numpy",
-      "Excel",
-      "Matplotlib",
-      "R",
-      "HTML",
-      "CSS",
-      "Tailwind",
-      "Bootstrap",
-      "SASS",
-      "MySQL",
-      "PostgreSQL",
-      "OracleSQL",
-      "Laravel",
-      "Docker",
-      "Git/GitHub",
-      "Typescript",
-      "NextJS",
-      "NodeJS",
-      "ExpressJS",
-      "NestJS",
-      "SpringBot",
-      ".NET"
-    ]
-   }
+    {
+      "nameLearningPath": "Desarrollo Front-End",
+      "tools": [
+        "Javascript",
+        "ReactJs",
+        "AngularJs",
+        "VueJs",
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "Bootstrap",
+        "SASS",
+        "Typescript"
+      ]
+    },
+    {
+      "nameLearningPath": "Desarrollo Back-End",
+      "tools": [
+        "Python",
+        "Java",
+        "PHP",
+        "C",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "Laravel",
+        "NextJS",
+        "NodeJS",
+        "ExpressJS",
+        "NestJS",
+        "SpringBot",
+        ".NET"
+      ]
+    },
+    {
+      "nameLearningPath": "Analisis de Datos",
+      "tools": ["Pandas", "Numpy", "Excel", "Matplotlib", "R"]
+    },
+    {
+      "nameLearningPath": "Manejo de Bases de Datos",
+      "tools": ["MySQL", "PostgreSQL", "OracleSQL"]
+    },
+    {
+      "nameLearningPath": "Pensamiento Logico",
+      "tools": ["Docker", "Git/GitHub"]
+    }
   ]
 }

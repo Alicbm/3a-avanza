@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 type Props = {
   placeholder: string;
+  search: string;
   setSearch: (arg: string) => void;
   setSimilarSearch: (arg: string) => void;
   listSimilarSearches: string[];
@@ -15,6 +16,7 @@ type Props = {
 
 function InputSearch({
   placeholder,
+  search,
   setSearch,
   listSimilarSearches,
   setSimilarSearch,
@@ -25,7 +27,8 @@ function InputSearch({
 
   const handleSubmit = () => {
     setSearch(test);
-    setModalSearch(false)
+    setModalSearch(false);
+    setTest('')
   };
 
   return (
@@ -41,15 +44,15 @@ function InputSearch({
           <input
             type="text"
             placeholder={placeholder}
-            value={test}
+            value={search}
             className="w-full h-full px-4 text-lg text-darkBlue font-bold outline-none rounded-tl-md rounded-bl-md"
             onChange={(e) => {
               setTest(e.target.value);
               setSimilarSearch(e.target.value);
-              setModalSearch(true)
+              setModalSearch(true);
             }}
           />
-          {(similarSearch.length >= 1 && modalSearch) && (
+          {similarSearch.length >= 1 && modalSearch && (
             <ul className="col-span-7 absolute top-[50px] left-0 w-full bg-darkBlue rounded-lg mx-auto z-10">
               {listSimilarSearches.map((item) => (
                 <li
@@ -57,8 +60,8 @@ function InputSearch({
                   className="text-white text-md border-b border-hoverGray px-[15px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
                   onClick={() => {
                     setTest(item);
-                    setSearch(item)
-                    setModalSearch(false)
+                    setSearch(item);
+                    setModalSearch(false);
                   }}
                 >
                   {item}
