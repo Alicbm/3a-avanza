@@ -1,9 +1,10 @@
+import { useSearchCourses } from '../../hooks/useSearchCourses';
+import { data } from '../../data/courses.json'
+import { styles } from '../../styles';
 import InputSearch from '../../components/InputSearch';
 import AllCourses from './AllCourses';
 import FrontPage from './FrontPage';
-import { useSearchCourses } from '../../hooks/useSearchCourses';
 import NotResults from '../../components/NotResults';
-import { styles } from '../../styles';
 import GroupFilterList from './components/GroupFilterList';
 
 function CoursesPath() {
@@ -19,7 +20,7 @@ function CoursesPath() {
     setPath,
     setTool,
     setLevel,
-  } = useSearchCourses();
+  } = useSearchCourses(data);
 
   const styleFrontPage = {
     background: 'linear-gradient(#060513, #090b20, #090b20)',
@@ -31,7 +32,6 @@ function CoursesPath() {
         <FrontPage>
           <InputSearch
             placeholder="Burcar Cursos..."
-            search={search}
             setSearch={setSearch}
             setSimilarSearch={setSimilarSearch}
             similarSearch={similarSearch}

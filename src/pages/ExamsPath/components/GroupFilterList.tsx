@@ -25,11 +25,9 @@ function GroupFilterList({
   const [dificulty, setDificulty] = useState('Todos los niveles');
 
   useEffect(() => {
-    if(search.length > 0){
-      setLearningPath('Todas las Rutas')
-      setAllTools('Todas las Herramientas')
-      setDificulty('Todos los niveles')
-    }
+    setLearningPath('Todas las Rutas')
+    setAllTools('Todas las Herramientas')
+    setDificulty('Todos los niveles')
   }, [search])
 
   useEffect(() => {

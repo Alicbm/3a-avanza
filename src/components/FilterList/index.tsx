@@ -3,19 +3,18 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { useState } from 'react';
+import { MdOutlineKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 
 type Props = {
-  // initialValue: string;
   list: string[];
   name: string;
-  setItem: (arg: string) => void;
   valueList: string
+  setItem: (arg: string) => void;
   setValueList: (arg: string) => void
 };
 
 function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
   const [stateList, setStateList] = useState(false);
-  // const [valueList, setValueList] = useState(initialValue);
   const [itemSearch, setItemSearch] = useState('');
 
   const filterItems = list.filter(
@@ -23,32 +22,7 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
   );
 
   return (
-    // <div
-    //   className="relative min-w-[200px] cursor-pointer hover:bg-hoverDarkBlue"
-    //   onClick={() => setStateList(!stateList)}
-    // >
-    //   <div className="flex justify-around items-center gap-4 h-[45px] border-2 border-blue rounded-md px-4 py-2">
-    //     <p className="text-white">{valueList}</p>
-    //     <span>➕</span>
-    //   </div>
-    //   {stateList && (
-    //     <ul className="absolute top-[50px] left-0 right-0 bg-darkBlue border-2 border-blue rounded-md p-2">
-    //       {list.map((item) => (
-    //         <li
-    //           onClick={() => {
-    //             setStateList(false);
-    //             setValueList(item.text);
-    //           }}
-    //           className="text-white text-md border-b border-hoverGray p-[5px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
-    //         >
-    //           {item.text}
-    //         </li>
-    //       ))}
-    //     </ul>
-    //   )}
-    // </div>
-
-    <div className="relative flex justify-center items-center gap-1 border border-hoverGray rounded-md cursor-pointer">
+    <div className="relative flex justify-center items-center gap-1 rounded-md cursor-pointer">
       <div
         className="flex items-center h-[45px] bg-hoverDarkBlue px-4 rounded-md"
         onClick={() => setStateList(!stateList)}
@@ -57,11 +31,17 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
       </div>
       <div className="min-w-[200px]">
         <div
-          className="flex justify-around items-center gap-4 h-[45px] bg-hoverDarkBlue hover:bg-darkBlue rounded-md px-4 py-2"
+          className="flex justify-around items-center gap-4 h-[45px] bg-darkBlue hover:bg-hoverDarkBlue rounded-md px-4 py-2"
           onClick={() => setStateList(!stateList)}
         >
-          <p className="text-gray">{valueList}</p>
-          <span>➕</span>
+          <p className="text-gray font-bold">{valueList}</p>
+          <span className='text-blue text-[30px]'>
+            {
+              !stateList ?
+              <MdOutlineKeyboardArrowDown /> :
+              <MdOutlineKeyboardArrowUp />
+            }
+          </span>
         </div>
         {stateList && (
           <div className="absolute top-[50px] left-0 right-0 bg-darkBlue border border-hoverGray rounded-md p-2">
@@ -83,7 +63,7 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
                     setValueList(item);
                     setItem(item);
                   }}
-                  className="text-white text-md border-b border-blue p-[5px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
+                  className="text-white text-md border-b border-hoverGray p-[5px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
                 >
                   {item}
                 </li>

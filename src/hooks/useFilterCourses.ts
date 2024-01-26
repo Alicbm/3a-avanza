@@ -1,8 +1,8 @@
 /* eslint-disable import/prefer-default-export */
 import { useState } from 'react';
-import { CoursesIT } from '../types';
+import { ExamsIT, CoursesIT } from '../types';
 
-export const useFilterCourses = (data: CoursesIT[]) => {
+export const useFilterCourses = (data: ExamsIT[] | CoursesIT[]) => {
   const [path, setPath] = useState('');
   const [tool, setTool] = useState('');
   const [level, setLevel] = useState('');

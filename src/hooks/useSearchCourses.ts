@@ -1,10 +1,10 @@
 /* eslint-disable import/prefer-default-export */
 import { useEffect, useState } from 'react';
 import { useFilterCourses } from './useFilterCourses';
-import { data } from '../data/courses.json';
 import { data as dataTools } from '../data/tools.json';
+import { CoursesIT, ExamsIT } from '../types';
 
-export const useSearchCourses = () => {
+export const useSearchCourses = (data: CoursesIT[] | ExamsIT[]) => {
   const { newData, path, tool, level, setPath, setTool, setLevel } =
     useFilterCourses(data);
 
@@ -31,8 +31,6 @@ export const useSearchCourses = () => {
       );
 
       setDataFiltered(filteredCourses);
-    } else {
-      setDataFiltered(data);
     }
   }, [search]);
 

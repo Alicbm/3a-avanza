@@ -1,10 +1,10 @@
 import React from 'react';
 import Course from '../../../components/Course';
-import { CoursesIT } from '../../../types';
+import { CoursesIT, ExamsIT } from '../../../types';
 
 type Props = {
   children: any;
-  filteredCourses: CoursesIT[];
+  filteredCourses: CoursesIT[] | ExamsIT[];
   search: string;
 };
 

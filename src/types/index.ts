@@ -22,22 +22,6 @@ export interface LearningPathIT {
   path: string;
 }
 
-export interface CoursesIT {
-  id: number
-  name: string
-  origin: string
-  popularity: string
-  tool: string
-  dificulty: string
-  image: string
-  url: string
-  learningPath: string
-  definition: string
-  whyLearnIt: string
-  salary: string
-  recommendedReadings: string[]
-}
-
 export interface QuestionIT {
   id: number
   question: string
@@ -47,10 +31,27 @@ export interface QuestionIT {
   opcionD: (string | boolean)[]
 }
 
-export interface ExamsIT {
+interface ExamsCoursesIT {
   id: number
   dificulty: string
   tool: string
-  title: string
-  exams: QuestionIT[]
+  name: string
+  learningPath: string
+  origin?: string
+  popularity?: string
+}
+
+export interface CoursesIT extends ExamsCoursesIT{
+  origin: string
+  popularity: string
+  image: string
+  url: string
+  definition: string
+  whyLearnIt: string
+  salary: string
+  recommendedReadings: string[]
+}
+
+export interface ExamsIT extends ExamsCoursesIT {
+  exams?: QuestionIT[]
 }

@@ -4,7 +4,8 @@
       "id": 1,
       "dificulty": "Basico",
       "tool": "Javascript",
-      "title": "Examen de Javascript",
+      "name": "Examen de Javascript",
+      "learningPath": "Desarrollo Front-End",
       "exams": [
         {
           "id": 1,
@@ -35,8 +36,9 @@
     {
       "id": 2,
       "dificulty": "Intermedio",
-      "tool": "Javascript",
-      "title": "Examen de Javascript",
+      "tool": "ReactJs",
+      "name": "Examen de ReactJs",
+      "learningPath": "Desarrollo Front-End",
       "exams": [
         {
           "id": 1,

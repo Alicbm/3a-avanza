@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
@@ -7,8 +8,8 @@ import { AppContext } from '../../AppContext';
 type Props = {
   id: number;
   name: string;
-  origin: string;
-  popularity: string;
+  origin: string | undefined;
+  popularity: string | undefined;
   dificulty: string;
 };
 
@@ -17,17 +18,6 @@ function Course({ id, name, origin, popularity, dificulty }: Props) {
   const navigate = useNavigate();
 
   return (
-    // <div className="h-[100px] flex justify-start items-center gap-4 border border-gray rounded-lg pr-2 overflow-hidden">
-    //   <div>
-    //     <img src={testImage} alt="Test" className="h-[100px] object-cover" />
-    //   </div>
-    //   <div>
-    //     <h4 className="font-title text-white text-lg">Curso Python Python </h4>
-    //     <p className="font-title text-gray text-md">Mouredev</p>
-    //     <p className="text-blue text-sm">85% Popularidad</p>
-    //   </div>
-    // </div>
-    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
     <div
       className="min-w-[280px] min-h-[230px] bg-hoverDarkBlue rounded-lg overflow-hidden cursor-pointer"
       onClick={() => {
