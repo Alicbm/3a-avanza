@@ -26,6 +26,10 @@ routes.push({
   to: '/exams',
   text: 'Exámenes'
 })
+routes.push({
+  to: '/exercises',
+  text: 'Ejercicios'
+})
 
 function NavBar () {
   return (
