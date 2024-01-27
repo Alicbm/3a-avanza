@@ -1,10 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-// export enum NAME_LEARNING_PATHS {
-//   frontEnd = "Desarrollo Front-End",
-//   backEnd = "Deserrollo Back-Edn"
-// }
-
 export type AppContextType = {
   nameLearningPath: string;
   setNameLearningPath: (arg: string) => void;
@@ -25,10 +20,8 @@ export interface LearningPathIT {
 export interface QuestionIT {
   id: number
   question: string
-  opcionA: (string | boolean)[]
-  opcionB: (string | boolean)[]
-  opcionC: (string | boolean)[]
-  opcionD: (string | boolean)[]
+  options: string[]
+  correctAnswer: string
 }
 
 interface ExamsCoursesIT {
@@ -53,5 +46,9 @@ export interface CoursesIT extends ExamsCoursesIT{
 }
 
 export interface ExamsIT extends ExamsCoursesIT {
-  exams?: QuestionIT[]
+  exams: QuestionIT[]
 }
+
+export type ChosenOptions = {
+  [key: number]: string;
+};

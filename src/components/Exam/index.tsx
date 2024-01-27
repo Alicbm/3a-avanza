@@ -15,21 +15,6 @@ function Exam({ id, name, dificulty }: Props) {
   const [modal, setModal] = useState(false);
 
   return (
-    // <div className="flex justify-between items-center gap-4 max-w-[550px] h-[70px] pr-6 border border-gray rounded-md overflow-hidden">
-    //   <div className='flex items-center gap-4'>
-    //     <img src={jsIcon} alt="Js" className="h-[70px]" />
-    //     <div>
-    //       <h4 className="text-white font-title text-lg">
-    //         Examen de Javascript
-    //       </h4>
-    //       <p className="text-gray">Intermedio</p>
-    //     </div>
-    //   </div>
-    //   <div>
-    //     <MainButton text="Tomar Curso" className="h-[30px] rounded-md p-3" />
-    //   </div>
-    // </div>
-
     <div className="bg-hoverDarkBlue rounded-lg overflow-hidden">
       <div>
         <img

@@ -9,27 +9,33 @@
       "exams": [
         {
           "id": 1,
-          "question": "Qué es javascript?",
-          "opcionA": ["Un lenguaje de programación", true],
-          "opcionB": ["Un idioma extranjero", false],
-          "opcionC": ["Un editor de codigo", false],
-          "opcionD": ["No tengo idea", false]
+          "question": "¿Cuál de las siguientes es una forma correcta de declarar una variable en JavaScript?",
+          "options": ["var x = 5;", "variable y = 10;", "let z := 7;", "const a = 'hola';"],
+          "correctAnswer": "var x = 5;"
         },
         {
           "id": 2,
-          "question": "Qué es una función en javascript?",
-          "opcionA": ["Esta es", true],
-          "opcionB": ["Esta no es", false],
-          "opcionC": ["Esta no tampoco", false],
-          "opcionD": ["Ni esta", false]
+          "question": "¿Cómo se llama el modelo de ejecución de JavaScript que utiliza un solo hilo de ejecución?",
+          "options": ["Multi-threading", "Event Loop", "Callback Hell", "Promise Chain"],
+          "correctAnswer": "Event Loop"
         },
         {
           "id": 3,
-          "question": "Javascript es un lengujae asincrono?",
-          "opcionA": ["Verdadero", true],
-          "opcionB": ["Falso", false],
-          "opcionC": ["", false],
-          "opcionD": ["", false]
+          "question": "¿Qué función se utiliza para imprimir en la consola en JavaScript?",
+          "options": ["console.log()", "print()", "log.console()", "write()"],
+          "correctAnswer": "console.log()"
+        },
+        {
+          "id": 4,
+          "question": "¿Cuál es la forma correcta de comentar una línea en JavaScript?",
+          "options": ["// Esto es un comentario", "/* Esto es un comentario */", "# Esto es un comentario", "%% Esto es un comentario"],
+          "correctAnswer": "// Esto es un comentario"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué es JSON en JavaScript?",
+          "options": ["JavaScript Object Notation", "Java String Object Notation", "JavaScript Oriented Notation", "JSON es un lenguaje por sí mismo"],
+          "correctAnswer": "JavaScript Object Notation"
         }
       ]
     },
@@ -42,27 +48,33 @@
       "exams": [
         {
           "id": 1,
-          "question": "Qué es javascript?",
-          "opcionA": ["Un lenguaje de programación", true],
-          "opcionB": ["Un idioma extranjero", false],
-          "opcionC": ["Un editor de codigo", false],
-          "opcionD": ["No tengo idea", false]
+          "question": "¿Qué es JSX en React?",
+          "options": ["JavaScript XML", "Java Syntax Extension", "JavaScript Extension", "JSX no se usa en React"],
+          "correctAnswer": "JavaScript XML"
         },
         {
           "id": 2,
-          "question": "Qué es una función en javascript?",
-          "opcionA": ["Esta es", true],
-          "opcionB": ["Esta no es", false],
-          "opcionC": ["Esta tampoco", false],
-          "opcionD": ["NI esta", false]
+          "question": "¿Cuál es el propósito del estado en React?",
+          "options": ["Almacenar datos del componente", "Manejar el estilo CSS", "Definir props", "Realizar operaciones asíncronas"],
+          "correctAnswer": "Almacenar datos del componente"
         },
         {
           "id": 3,
-          "question": "Javascript es un lengujae asincrono?",
-          "opcionA": ["Verdadero", true],
-          "opcionB": ["Falso", false],
-          "opcionC": ["", false],
-          "opcionD": ["", false]
+          "question": "¿Qué función se utiliza para crear un nuevo elemento en React?",
+          "options": ["React.createElement()", "React.makeElement()", "React.newElement()", "React.create()"],
+          "correctAnswer": "React.createElement()"
+        },
+        {
+          "id": 4,
+          "question": "¿Qué método de ciclo de vida se invoca después de que un componente se inserta en el DOM?",
+          "options": ["componentDidMount", "componentWillMount", "componentRendered", "componentInserted"],
+          "correctAnswer": "componentDidMount"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué es un componente controlado en React?",
+          "options": ["Un componente controlado manualmente con JavaScript", "Un componente sin estado", "Un componente controlado por React Router", "Un componente que actualiza su propio estado"],
+          "correctAnswer": "Un componente que actualiza su propio estado"
         }
       ]
     }

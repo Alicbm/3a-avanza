@@ -5,7 +5,7 @@ import FrontPage from './FrontPage';
 import LearningPaths from './LearningPaths';
 import { styles } from '../../styles';
 
-function Home() {
+function HomePage() {
   const styleFrontPage = {
     background: 'linear-gradient(#090b20, #060513)'
   }
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

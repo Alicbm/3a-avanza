@@ -1,13 +1,13 @@
 import { useSearchCourses } from '../../hooks/useSearchCourses';
-import { data } from '../../data/questions.json'
+import { data } from '../../data/courses.json'
 import { styles } from '../../styles';
 import InputSearch from '../../components/InputSearch';
-import NotResults from '../../components/NotResults';
-import AllExams from './AllExams';
+import AllCourses from './AllCourses';
 import FrontPage from './FrontPage';
+import NotResults from '../../components/NotResults';
 import GroupFilterList from './components/GroupFilterList';
 
-function ExamsPath() {
+function CoursesPage() {
   const {
     dataFiltered,
     setSearch,
@@ -24,14 +24,14 @@ function ExamsPath() {
 
   const styleFrontPage = {
     background: 'linear-gradient(#060513, #090b20, #090b20)',
-  };   
+  };    
 
   return (
     <div>
       <div className="bg-black" style={styles}>
         <FrontPage>
           <InputSearch
-            placeholder="Burcar Examenes..."
+            placeholder="Burcar Cursos..."
             setSearch={setSearch}
             setSimilarSearch={setSimilarSearch}
             similarSearch={similarSearch}
@@ -40,7 +40,7 @@ function ExamsPath() {
         </FrontPage>
       </div>
       <div className="bg-darkBlue" style={styleFrontPage}>
-        <AllExams filteredCourses={dataFiltered}>
+        <AllCourses filteredCourses={dataFiltered} search={search}>
           <GroupFilterList
             tools={tools}
             learningPaths={learnigPaths}
@@ -51,10 +51,10 @@ function ExamsPath() {
           />
 
           {dataFiltered.length === 0 && <NotResults searched={search} />}
-        </AllExams>
+        </AllCourses>
       </div>
     </div>
   );
 }
 
-export default ExamsPath;
+export default CoursesPage;

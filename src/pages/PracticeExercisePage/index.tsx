@@ -1,7 +1,7 @@
 import AllExercises from "./AllExercises"
 import FrontPage from "./FrontPage"
 
-function PracticeExercisePath() {
+function PracticeExercisePage() {
   return (
     <div>
       <div className="bg-black">
@@ -15,4 +15,4 @@ function PracticeExercisePath() {
   )
 }
 
-export default PracticeExercisePath
+export default PracticeExercisePage

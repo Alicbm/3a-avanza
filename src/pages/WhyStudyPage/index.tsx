@@ -1,7 +1,7 @@
 import AllText from "./AllText"
 import FrontPage from "./FrontPage"
 
-function WhyStudy () {
+function WhyStudyPage () {
   return (
     <div>
       <FrontPage />
@@ -10,4 +10,4 @@ function WhyStudy () {
   )
 }
 
-export default WhyStudy
+export default WhyStudyPage

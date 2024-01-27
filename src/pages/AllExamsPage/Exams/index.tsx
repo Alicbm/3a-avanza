@@ -7,7 +7,7 @@ type Props = {
   filteredCourses: ExamsIT[];
 };
 
-function AllExams({ children, filteredCourses }: Props) {
+function Exams({ children, filteredCourses }: Props) {
   const allChildren = React.Children.toArray(children);
 
   return (
@@ -38,4 +38,4 @@ function AllExams({ children, filteredCourses }: Props) {
   );
 }
 
-export default AllExams;
+export default Exams;

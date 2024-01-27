@@ -11,7 +11,9 @@ module.exports = {
         'hoverDarkBlue': '#080a1c',
         'black': '#060513',
         'gray': '#959595',
-        'hoverGray': '#3c3c3c'
+        'hoverGray': '#3c3c3c',
+        'green': '#006600',
+        'red': '#DA1616'
       }
     },
     fontFamily: {

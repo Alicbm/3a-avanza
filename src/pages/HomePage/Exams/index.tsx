@@ -20,7 +20,7 @@ function Exams() {
           data.map((item: ExamsIT) => (
             <Exam 
               id={item.id}
-              name={item.title}
+              name={item.name}
               dificulty={item.dificulty}
             />
           ))
