@@ -1,18 +1,34 @@
 import Path from '../../../components/LearningPath';
 
+const colorsStyle = ['#6f3a88', '#148bbf', '#ec2d3e','#03913a','#fbf73e'];
+
 function LearningPaths() {
   return (
-    <div className="grid items-center max-w-[1200px] w-full h-[70%] mx-auto">
-      <h2 className="w-[60%] font-title text-5xl text-center text-white mx-auto mb-10">
-        Inicia en el mundo <span className="text-blue">laboral</span>{' '}
-        aprendiendo las áreas más <span className="text-blue">demandas</span>
+    <div className="grid items-center max-w-[1200px] w-full py-20 mx-auto">
+      <h2 className="w-[70%] font-title text-[35px] text-center text-white mx-auto mb-10">
+        Inicia en el Mundo Laboral Aprendiendo las Áreas más Demandas
       </h2>
       <div className="w-full grid grid-cols-3 gap-4">
-        <Path nameRoute="Desarrollo Front-End" numberCourses="12" />
-        <Path nameRoute="Desarrollo Back-End" numberCourses="12" />
-        <Path nameRoute="Análisis de Datos" numberCourses="12" />
-        <Path nameRoute="Manejo de Bases de Datos" numberCourses="12" />
-        <Path nameRoute="Pensamiento Lógico" numberCourses="12" />
+        <Path
+          nameRoute="Desarrollo Front-End"
+          color={colorsStyle[0]}
+        />
+        <Path
+          nameRoute="Desarrollo Back-End"
+          color={colorsStyle[1]}
+        />
+        <Path
+          nameRoute="Análisis de Datos"
+          color={colorsStyle[2]}
+        />
+        <Path
+          nameRoute="Manejo de Bases de Datos"
+          color={colorsStyle[3]}
+        />
+        <Path
+          nameRoute="Pensamiento Lógico"
+          color={colorsStyle[4]}
+        />
       </div>
     </div>
   );

@@ -3,10 +3,7 @@ import { styles } from '../../styles';
 
 function Footer() {
   return (
-    <footer 
-      className='relative w-full h-[60vh] bg-black text-white font-md pt-[50px]'
-      style={styles}
-    >
+    <footer className='relative w-full h-[60vh] bg-hoverDarkBlue text-white font-md pt-[50px]'>
       <div className='w-[80%] max-w-[1200px] grid grid-cols-7 gap-10 mx-auto'>
         <div className='col-span-2'>
           <div className='text-5xl font-title text-blue mb-4'>AAA</div>
@@ -48,7 +45,10 @@ function Footer() {
           </span>
         </div>
       </div>
-      <div className='absolute left-0 right-0 bottom-0 border-t-2 border-t-blue py-5'>
+      <div 
+        className='absolute left-0 right-0 bottom-0 border-t-2 border-t-blue py-5'
+        style={styles}
+      >
         <p className='text-center'>
           Diseñado y Desarrollado por <span className='text-blue'>Alic Barandica, Desarrollador Full-Stack</span>
         </p>

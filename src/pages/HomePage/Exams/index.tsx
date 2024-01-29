@@ -4,10 +4,10 @@ import { ExamsIT } from '../../../types';
 
 function Exams() {
   return (
-    <div className="grid items-center w-full max-w-[1200px] mx-auto">
-      <h2 className="w-[60%] font-title text-5xl text-center text-white mx-auto mb-5">
-        ¿Quieres poner a prueba tus{' '}
-        <span className="text-blue">conocimientos</span>?
+    <div className="grid items-center w-full max-w-[1200px] py-20 mx-auto">
+      <h2 className="w-[60%] font-title text-[35px] text-center text-white mx-auto mb-5">
+        ¿Quieres Poner a Prueba tus{' '}
+        <span className="text-blue">Conocimientos</span>?
       </h2>
       <p className="w-[70%] text-gray text-lg text-center leading-8 mx-auto mb-10">
         En 3A Avanza, te ofrecemos una serie de exámenes diseñados para validas

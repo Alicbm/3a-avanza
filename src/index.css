@@ -7,3 +7,22 @@
   min-height: 100vh;
   background-color: #090b20;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090b20;
+  opacity: .5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1561f0;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0c50ce;
+}

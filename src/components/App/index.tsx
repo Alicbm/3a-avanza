@@ -1,8 +1,8 @@
 import { HashRouter } from 'react-router-dom';
+import { AppProvider } from '../../AppContext';
 import RootRouter from '../../router/RootRouter';
 import NavBar from '../NavBar';
 import Footer from '../Footer';
-import { AppProvider } from '../../AppContext';
 
 function App() {
   return (

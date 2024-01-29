@@ -4,11 +4,9 @@ import pyhtonLogo from '../../../icons/python.png'
 import htmlLogo from '../../../icons/html.png'
 import excelLogo from '../../../icons/excel.png'
 
-
 function Description() {
-
   return (
-    <div className='flex flex-col justify-center items-center gap-6 w-full max-w-[1200px] h-full mx-auto'>
+    <div className='flex flex-col justify-center items-center gap-6 w-full max-w-[1200px] h-full mx-auto bg-hoverDarkBlue py-[80px] rounded-[20px]'>
       <div>
         <p className='w-[70%] text-white font-text font-bold text-lg text-center leading-10 mx-auto'>
           <span className='text-blue'>3A Avanza</span> ha sido desarrollado con el objetivo de apoyar a los estudiantes en su camino profesional. A través de exámenes, documentación, cursos y rutas de aprendizaje, buscamos proporcionar las herramientas necesarias para que los estudiantes puedan desarrrollarse de forma autodidacta en algunas de las áreas más demandadas en la actualidad
