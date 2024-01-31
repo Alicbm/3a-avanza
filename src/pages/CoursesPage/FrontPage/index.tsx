@@ -5,13 +5,20 @@ type Props = {
 }
 
 function FrontPage({ children }: Props) {
+  const styleFrontPage = {
+    background: 'linear-gradient(#090b20, #060513)',
+  };
+
   return (
-    <div className="max-w-[1200px] w-full h-full grid place-content-center py-10 mx-auto">
+    <div 
+      className="max-w-[1200px] w-full h-full grid place-content-center py-10 mx-auto mt-10 rounded-lg"
+      style={styleFrontPage}
+    >
       <div>
-        <h1 className="font-title text-white text-[35px] text-center mb-4">
+        <h1 className="text-white text-[60px] text-center font-bold mb-2">
           Accede a todos los <span className="text-blue">Cursos</span>
         </h1>
-        <p className='w-[60%] text-gray text-lg text-center mx-auto mb-8'>
+        <p className='w-[60%] text-gray text-lg leading-8 text-center mx-auto mb-8'>
           Tenemos más de 200 cursos repartidos en diferentes áreas como serían desarrollo we,
           analisis de datos, bases de datos y muchas más.
         </p>

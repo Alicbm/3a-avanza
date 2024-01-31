@@ -33,8 +33,8 @@ function Course({ id, name, origin, popularity, dificulty }: Props) {
         />
       </div>
       <div className="px-4 py-2">
-        <h4 className="font-title text-white text-lg">{name}</h4>
-        <p className="font-title text-gray text-md">{dificulty} - {origin}</p>
+        <h4 className="font-bold text-white text-lg">{name}</h4>
+        <p className="text-gray text-md mb-1">{dificulty} - {origin}</p>
         <p className="text-blue text-sm">{popularity} Popularidad</p>
       </div>
     </div>

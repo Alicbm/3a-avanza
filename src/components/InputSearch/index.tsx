@@ -39,7 +39,7 @@ function InputSearch({
             type="text"
             placeholder={placeholder}
             value={test}
-            className="w-full h-full px-4 text-lg text-darkBlue font-bold outline-none rounded-tl-md rounded-bl-md"
+            className="w-full h-full px-4 text-lg text-darkBlue font-bold bg-white outline-none rounded-tl-md rounded-bl-md"
             onChange={(e) => {
               setTest(e.target.value);
               setSimilarSearch(e.target.value);
@@ -67,7 +67,8 @@ function InputSearch({
         </div>
         <button
           type="submit"
-          className="col-span-1 text-white font-title text-lg w-full h-[45px] bg-blue rounded-tr-md rounded-br-md hover:bg-hoverBlue"
+          className="col-span-1 text-white font-bold text-lg w-full h-[45px] bg-blue rounded-tr-md rounded-br-md hover:bg-hoverBlue"
+          // className="col-span-1 text-blue font-bold text-lg w-full h-[45px] border border-blue rounded-tr-md rounded-br-md hover:bg-hoverBlue"
         >
           Buscar
         </button>

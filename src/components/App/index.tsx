@@ -8,7 +8,9 @@ function App() {
   return (
     <AppProvider>
       <HashRouter>
-        <NavBar />
+        <header className='bg-darkBlue'>
+          <NavBar />
+        </header>
         <main>
           <RootRouter />
         </main>

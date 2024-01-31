@@ -18,7 +18,7 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
   const [itemSearch, setItemSearch] = useState('');
 
   const filterItems = list.filter(
-    (item: string) => item.toLowerCase().includes(itemSearch) === true,
+    (item: string) => item.toLowerCase().includes(itemSearch.toLowerCase()) === true,
   );
 
   return (
@@ -34,7 +34,7 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
           className="flex justify-around items-center gap-4 h-[45px] bg-darkBlue hover:bg-hoverDarkBlue rounded-md px-4 py-2"
           onClick={() => setStateList(!stateList)}
         >
-          <p className="text-gray font-bold">{valueList}</p>
+          <p className="text-white font-bold">{valueList}</p>
           <span className='text-blue text-[30px]'>
             {
               !stateList ?
@@ -44,13 +44,13 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
           </span>
         </div>
         {stateList && (
-          <div className="absolute top-[50px] left-0 right-0 bg-darkBlue border border-hoverGray rounded-md p-2">
+          <div className="absolute top-[50px] left-0 right-0 bg-darkBlue rounded-md p-2">
             <div className="my-3">
               <input
                 type="text"
                 placeholder="Buscar..."
                 onChange={(e) => setItemSearch(e.target.value)}
-                className="w-full h-[40px] bg-hoverGray text-lg text-white rounded-md px-4 outline-none opacity-80"
+                className="w-full h-[40px] bg-white text-lg text-black font-bold rounded-[4px] px-4 outline-none opacity-90"
               />
             </div>
 
@@ -63,7 +63,7 @@ function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
                     setValueList(item);
                     setItem(item);
                   }}
-                  className="text-white text-md border-b border-hoverGray p-[5px] py-[10px] rounded-md cursor-pointer hover:bg-hoverGray"
+                  className="text-white text-md border-b border-hoverGray p-[5px] py-[10px] rounded-[4px] cursor-pointer hover:bg-hoverGray"
                 >
                   {item}
                 </li>

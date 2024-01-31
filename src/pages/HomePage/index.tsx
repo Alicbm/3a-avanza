@@ -3,16 +3,11 @@ import Description from './Description';
 import Exams from './Exams';
 import FrontPage from './FrontPage';
 import LearningPaths from './LearningPaths';
-// import { styles } from '../../styles';
 
 function HomePage() {
   const styleFrontPage = {
-    background: 'linear-gradient(#090b20, #060513)'
+    background: 'linear-gradient(#090b20, #090b20, #060513)'
   }
-
-  // const styleCourses = {
-  //   background: 'linear-gradient(#060513, #090b20, #090b20, #060513)'
-  // }
 
   return (
     <section>

@@ -8,6 +8,7 @@ module.exports = {
         'blue': '#1561f0',
         'hoverBlue': '#0c50ce',
         'darkBlue': '#090b20',
+        'secondaryDarkBlue': '#070717',
         'hoverDarkBlue': '#080a1c',
         'black': '#060513',
         'gray': '#959595',

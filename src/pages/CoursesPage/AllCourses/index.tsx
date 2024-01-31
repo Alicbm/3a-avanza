@@ -25,7 +25,7 @@ function AllCourses({ children, filteredCourses, search }: Props) {
         )}
       </div>
 
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-4 gap-6 bg-secondaryDarkBlue p-5 rounded-lg">
         {allChildren[1]
           ? allChildren[1]
           : filteredCourses.map((course) => (

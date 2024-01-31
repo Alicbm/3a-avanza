@@ -1,6 +1,6 @@
 import { useSearchCourses } from '../../hooks/useSearchCourses';
 import { data } from '../../data/courses.json'
-import { styles } from '../../styles';
+// import { styles } from '../../styles';
 import InputSearch from '../../components/InputSearch';
 import AllCourses from './AllCourses';
 import FrontPage from './FrontPage';
@@ -20,15 +20,11 @@ function CoursesPage() {
     setPath,
     setTool,
     setLevel,
-  } = useSearchCourses(data);
-
-  const styleFrontPage = {
-    background: 'linear-gradient(#060513, #090b20, #090b20)',
-  };    
+  } = useSearchCourses(data);    
 
   return (
     <div>
-      <div className="bg-black" style={styles}>
+      <div>
         <FrontPage>
           <InputSearch
             placeholder="Burcar Cursos..."
@@ -39,7 +35,7 @@ function CoursesPage() {
           />
         </FrontPage>
       </div>
-      <div className="bg-darkBlue" style={styleFrontPage}>
+      <div>
         <AllCourses filteredCourses={dataFiltered} search={search}>
           <GroupFilterList
             tools={tools}
