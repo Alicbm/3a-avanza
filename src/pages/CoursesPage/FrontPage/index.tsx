@@ -16,7 +16,7 @@ function FrontPage({ children }: Props) {
     >
       <div>
         <h1 className="text-white text-[60px] text-center font-bold mb-2">
-          Accede a todos los <span className="text-blue">Cursos</span>
+          Accede a todos los <span className="text-blue">cursos</span>
         </h1>
         <p className='w-[60%] text-gray text-lg leading-8 text-center mx-auto mb-8'>
           Tenemos más de 200 cursos repartidos en diferentes áreas como serían desarrollo we,

@@ -14,16 +14,16 @@ function HomePage() {
       <div className="h-[500px]" style={styleFrontPage}>
         <FrontPage />
       </div>
-      <div className="grid justify-center items-center bg-black" >
+      <div className="grid justify-center items-center" >
         <Description />
       </div>
-      <div className="grid justify-center items-center bg-black">
+      <div className="grid justify-center items-center">
         <LearningPaths />
       </div>
-      <div className="grid justify-center items-center bg-black">
+      <div className="grid justify-center items-center">
         <CoursesHome />
       </div>
-      <div className="grid justify-center items-center bg-black">
+      <div className="grid justify-center items-center">
         <Exams />
       </div>
     </section>

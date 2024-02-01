@@ -10,7 +10,6 @@ function FrontPage() {
     >
       <h1 className="w-[90%] text-white text-[60px] text-center font-bold mb-2 mx-auto">
         Practica tus <span className="text-blue">conocimientos</span>
-        {/* algunos <span className="text-blue">ejercicios</span> de lógica! */}
       </h1>
       <p className="w-[60%] text-gray text-lg leading-8 text-center mx-auto mb-8">
         Explora esta sección que ofrece una variedad de ejercicios diseñados

@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import imgBackground from '../images/backgroundIcons.png';
+import imgBackground from '../images/bg.png';
 
 export const styles = {
   backgroundImage: `url(${imgBackground})`,

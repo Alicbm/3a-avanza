@@ -27,7 +27,7 @@ function Exercise() {
         </div>
 
         <div className='px-6 py-3'>
-          <p className="text-white leading-8 mb-5">
+          <p className="text-white text-justify leading-8 mb-5">
             Realiza un script que pida numeros hasta que se pulse "cancelar". Si
             no es un número debera indicarse con un alert y seguir pidiendo. Al
             salir con "cancelar" deberá indicarse la suma total de los números
@@ -38,7 +38,7 @@ function Exercise() {
       {state && (
         <div className="bg-darkBlue rounded-lg p-6 hover:bg-hoverDarkBlue">
           <div className="w-[90%] mx-auto">
-            <h3 className="font-title text-blue text-3xl mb-5">Solución</h3>
+            <h3 className="font-bold text-blue text-3xl mb-5">Solución</h3>
             <div className="w-[full] h-[400px] bg-gray"></div>
           </div>
         </div>

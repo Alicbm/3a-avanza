@@ -19,7 +19,7 @@ function Course({ id, name, origin, popularity, dificulty }: Props) {
 
   return (
     <div
-      className="min-w-[280px] min-h-[230px] bg-hoverDarkBlue rounded-lg overflow-hidden cursor-pointer"
+      className="min-w-[280px] min-h-[230px] bg-darkBlue rounded-md overflow-hidden cursor-pointer hover:bg-hoverDarkBlue"
       onClick={() => {
         navigate('/courses/video');
         setCourse(id);

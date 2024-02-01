@@ -1,6 +1,5 @@
 import { useSearchCourses } from '../../hooks/useSearchCourses';
 import { data } from '../../data/questions.json'
-import { styles } from '../../styles';
 import InputSearch from '../../components/InputSearch';
 import NotResults from '../../components/NotResults';
 import Exams from './Exams';
@@ -20,15 +19,11 @@ function AllExamsPage() {
     setPath,
     setTool,
     setLevel,
-  } = useSearchCourses(data);
-
-  const styleFrontPage = {
-    background: 'linear-gradient(#060513, #090b20, #090b20)',
-  };   
+  } = useSearchCourses(data); 
 
   return (
     <div>
-      <div className="bg-black" style={styles}>
+      <div>
         <FrontPage>
           <InputSearch
             placeholder="Burcar Examenes..."
@@ -39,7 +34,7 @@ function AllExamsPage() {
           />
         </FrontPage>
       </div>
-      <div className="bg-darkBlue" style={styleFrontPage}>
+      <div>
         <Exams filteredCourses={dataFiltered}>
           <GroupFilterList
             tools={tools}

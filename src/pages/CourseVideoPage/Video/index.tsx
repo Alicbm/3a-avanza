@@ -16,10 +16,10 @@ function Video() {
           <img src={findCourse?.url} alt={findCourse?.name} />
         </div>
         <div className="px-2">
-          <h1 className="font-title text-white text-5xl ">
+          <h1 className="font-bold text-white text-5xl ">
             {findCourse?.name}
           </h1>
-          <p className="font-title text-gray text-xl mb-5">
+          <p className="font-bold text-gray text-xl mb-5">
             {findCourse?.learningPath}
           </p>
           <div className="flex justify-between items-center">
@@ -34,7 +34,7 @@ function Video() {
         </div>
       </div>
 
-      <div className="grid gap-4 bg-hoverDarkBlue p-4 rounded-lg">
+      <div className="grid gap-4 bg-secondaryDarkBlue p-4 rounded-md">
         <TextFormat
           title="Qué es Javascript?"
           text={findCourse?.definition || ""}

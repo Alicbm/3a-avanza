@@ -37,26 +37,36 @@ function LearningPath({ nameRoute, color }: Props) {
     //     <IoIosArrowForward />
     //   </span>
     // </div>
-   <div className='relative grid gap-4 w-full bg-hoverDarkBlue pb-4 rounded-[10px] overflow-hidden'>
-    <div style={{borderBottom: `1px solid ${color}`}}>
-      <h2 className='font-title text-xl p-4' style={{color}}>{nameRoute}</h2>
+    <div className="relative grid gap-4 w-full bg-hoverDarkBlue pb-4 rounded-[10px] overflow-hidden">
+      <div style={{ borderBottom: `1px solid ${color}` }}>
+        <h2 className="font-title text-xl p-4" style={{ color }}>
+          {nameRoute}
+        </h2>
+      </div>
+      <div className="px-4 py-1">
+        <p className="text-md text-white">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
+          nesciunt doloribus, delectus atque ut quam earum labore accusantium
+          ipsum vel voluptatibus nemo eum animi.
+        </p>
+      </div>
+      <div className="flex justify-center items-center gap-4 px-4">
+        <SecondaryButton
+          text="Explorar Ruta"
+          className="w-[50%]"
+          style={{ borderColor: color, color }}
+          onClick={() => {
+            app?.setNameLearningPath(nameRoute);
+            navigate('/routes');
+          }}
+        />
+        <MainButton
+          text="Iniciar Ruta"
+          className="w-[50%] text-hoverDarkBlue"
+          style={{ backgroundColor: color, color: '#090b20' }}
+        />
+      </div>
     </div>
-    <div className='px-4 py-1'>
-      <p className='text-md text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae nesciunt doloribus, delectus atque ut quam earum labore accusantium ipsum vel voluptatibus nemo eum animi.</p>
-    </div>
-    <div className='flex justify-center items-center gap-4 px-4'>
-      <SecondaryButton 
-        text='Explorar Ruta' 
-        className='w-[50%]' 
-        style={{borderColor: color, color}}
-        onClick={() => {
-          app?.setNameLearningPath(nameRoute);
-          navigate('/routes');
-        }}
-      />
-      <MainButton text='Iniciar Ruta' className='w-[50%] text-hoverDarkBlue' style={{backgroundColor: color}}/>
-    </div>
-   </div>
   );
 }
 

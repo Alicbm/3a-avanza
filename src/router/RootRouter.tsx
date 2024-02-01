@@ -7,6 +7,7 @@ import AllExamsPage from '../pages/AllExamsPage';
 import ExamPage from '../pages/ExamPage';
 import CourseVideoPage from '../pages/CourseVideoPage';
 import PracticeExercisePage from '../pages/PracticeExercisePage';
+import NotFound from '../components/NotFound';
 
 function RootRouter() {
   return (
@@ -19,7 +20,7 @@ function RootRouter() {
       <Route path="/exams" element={<AllExamsPage />} />
       <Route path="/exams/test" element={<ExamPage />} />
       <Route path="/exercises" element={<PracticeExercisePage />} />
-      <Route path="*" element={<div>not found</div>} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }

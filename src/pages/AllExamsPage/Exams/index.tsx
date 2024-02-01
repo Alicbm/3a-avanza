@@ -1,10 +1,10 @@
 import React from 'react';
 import Exam from '../../../components/Exam';
-import { ExamsIT } from '../../../types';
+import { CoursesIT, ExamsIT } from '../../../types';
 
 type Props = {
   children: any;
-  filteredCourses: ExamsIT[];
+  filteredCourses: ExamsIT[] | CoursesIT[];
 };
 
 function Exams({ children, filteredCourses }: Props) {
@@ -16,12 +16,7 @@ function Exams({ children, filteredCourses }: Props) {
         {allChildren[0]}
       </div>
 
-      <div>
-        <h2 className="font-title text-gray text-5xl pl-5 mb-5">
-          Desarrollo Front-End
-        </h2>
-
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-4 gap-6 bg-secondaryDarkBlue p-5 rounded-lg">
            {allChildren[1]
           ? allChildren[1]
           : filteredCourses.map((exam) => (
@@ -33,7 +28,6 @@ function Exams({ children, filteredCourses }: Props) {
               />
             ))}
         </div>
-      </div>
     </div>
   );
 }
