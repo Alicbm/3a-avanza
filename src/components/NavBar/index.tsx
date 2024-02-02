@@ -12,7 +12,7 @@ routes.push({
   text: 'Inicio',
 });
 routes.push({
-  to: '/routes',
+  to: '/learning-path',
   text: 'Rutas',
 });
 routes.push({

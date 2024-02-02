@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "javascript": [
+        {
+          "id": 1,
+          "test": "Desarrolla una función que tome como parámetro un array de números y lo devuelva ordenado de menor a mayor, sin hacer uso del método 'sort' de los arrays.",
+          "solutions": ""
+        },
+        {
+          "id": 2,
+          "test": "Elabora una función que tome un número como argumento y retorne su factorial.",
+          "solutions": ""
+        },
+        {
+          "id": 3,
+          "test": "Elabora un programa que reciba un número como parámetro y devuelva la tabla de multiplicar de ese número" ,
+          "solutions": ""
+        },
+        {
+          "id": 4,
+          "test": "Crea una función que tome un número como argumento y devuelva “par” si el número es par y “impar” si el número es impar",
+          "solutions": ""
+        },
+        {
+          "id": 5,
+          "test": "Elabora un programa que reciba dos números y determine cuál es el mayor, cuál es el menor y si son iguales. Además, asegúrate de validar que los parámetros recibidos sean números y no cualquier otro tipo de datos.",
+          "solutions": ""
+        },
+        {
+          "id": 6,
+          "test": "Elabora un programa que solicite al usuario dos números enteros y muestre todos los números enteros comprendidos entre ellos",
+          "solutions": ""
+        },
+        {
+          "id": 7,
+          "test": "Desarrolla un programa que solicite al usuario dos números y muestre todos los números impares que se encuentren en el rango definido por esos dos números. Ten en cuanta que deben ser números enteros.",
+          "solutions": ""
+        },
+        {
+          "id": 8,
+          "test": "Crea una función que opere como calculadora de temperatura, permitiendo la conversión entre grados Celsius y Fahrenheit, o viceversa. La función debe recibir dos parámetros: el primero, la temperatura (un número), y el segundo, una indicación sobre si se desea convertir a grados Celsius o Fahrenheit.",
+          "solutions": ""
+        },
+        {
+          "id": 9,
+          "test": "Desarrolla una función encargada de calcular el peso de una persona en diversos planetas, tales como Júpiter, Marte y Saturno, considerando que el peso es relativo y depende de la gravedad de cada planeta. La función debe recibir dos parámetros: el primero correspondiente al peso a calcular y el segundo al planeta para el cual se realizará la estimación de peso.",
+          "solutions": ""
+        }
+      ]
+    }
+  ]
+}

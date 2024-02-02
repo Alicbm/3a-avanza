@@ -8,12 +8,14 @@ import ExamPage from '../pages/ExamPage';
 import CourseVideoPage from '../pages/CourseVideoPage';
 import PracticeExercisePage from '../pages/PracticeExercisePage';
 import NotFound from '../components/NotFound';
+import LearningPaths from '../pages/LearningPaths';
 
 function RootRouter() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/routes" element={<PathPage />} />
+      <Route path="/learning-path" element={<LearningPaths />} />
+      <Route path="/routes/route" element={<PathPage />} />
       <Route path="/routes/por-que-estudiar" element={<WhyStudyPage />} />
       <Route path="/courses" element={<CoursesPage />} />
       <Route path="/courses/video" element={<CourseVideoPage />} />

@@ -1,5 +1,6 @@
 import FilterList from '../../../components/FilterList';
 import Exercise from '../Exercise';
+import { data } from '../../../data/exercises.json'
 
 function AllExercises() {
   return (
@@ -26,16 +27,14 @@ function AllExercises() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 mb-4">
-        <div className="grid gap-4">
-          {[1, 2, 3, 4].map(() => (
-            <Exercise />
-          ))}
-        </div>
-        <div className="grid gap-4">
-          {[1, 2, 3, 4].map(() => (
-            <Exercise />
-          ))}
-        </div>
+        {
+          data[0].javascript.map((item, index) => (
+            <Exercise 
+              index={index + 1}
+              test={item.test}
+            />
+          ))
+        }
       </div>
     </div>
   );
