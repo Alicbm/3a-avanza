@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         'white': '#f8f8ff',
-        'blue': '#1561f0',
+        // 'blue': '#1561f0',
         'hoverBlue': '#0c50ce',
         'darkBlue': '#090b20',
         'secondaryDarkBlue': '#070717',
@@ -13,12 +13,19 @@ module.exports = {
         'black': '#060513',
         'gray': '#959595',
         'hoverGray': '#3c3c3c',
-        'green': '#006600',
-        'red': '#DA1616'
+        // 'green': '#006600',
+        'red': '#DA1616',
+        'purple': '#6f3a88',
+        'bgPurple': '#120F27',
+        'green': '#42946E',
+        'bgGreen': '#0E1824',
+        'blue': '#8CAEF2',
+        'bgBlue': '#161b2d',
       }
     },
     fontFamily: {
       title: ['Fredoka', 'sans-serif'],
+      // text: ['Prompt', 'sans-serif']
       text: ['Open Sans', 'sans-serif']
     },
     fontSize: {

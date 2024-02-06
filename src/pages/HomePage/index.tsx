@@ -2,28 +2,50 @@ import CoursesHome from './CoursesHome';
 import Description from './Description';
 import Exams from './Exams';
 import FrontPage from './FrontPage';
+import Introduction from './Introduction';
 import LearningPaths from './LearningPaths';
+import bgInitialPage from '../../images/bgInitialPage.png'
 
 function HomePage() {
   const styleFrontPage = {
-    background: 'linear-gradient(#090b20, #090b20, #060513)'
+    with: '100%',
+    backgroundImage: `url(${bgInitialPage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }
+
+  const styleLearningPath = {
+    background: 'linear-gradient(15deg, #070717, #070717, #070717, #070717, #120F27)'
+  }
+
+  const styleCourses = {
+    background: 'linear-gradient(15deg, #080a1c, #080a1c, #080a1c, #080a1c, #080a1c, #0E1824)'
+  }
+
+  const styleExams = {
+    background: 'linear-gradient(15deg, #080a1c, #080a1c, #080a1c, #080a1c, #080a1c, #1B2036)'
   }
 
   return (
     <section>
-      <div className="h-[500px]" style={styleFrontPage}>
+      <div className="relative h-[90vh] min-h-[620px] max-h-[620px] mb-[200px]" style={styleFrontPage}>
         <FrontPage />
+        <div className='absolute -bottom-[160px] left-[10%] right-[10%]'>
+          <Introduction />
+
+        </div>
       </div>
-      <div className="grid justify-center items-center" >
+      <div>
         <Description />
       </div>
-      <div className="grid justify-center items-center">
+      <div style={styleLearningPath}>
         <LearningPaths />
       </div>
-      <div className="grid justify-center items-center">
+      <div style={styleCourses}>
         <CoursesHome />
       </div>
-      <div className="grid justify-center items-center">
+      <div style={styleExams}>
         <Exams />
       </div>
     </section>
