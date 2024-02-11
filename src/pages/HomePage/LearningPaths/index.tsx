@@ -16,7 +16,7 @@ function LearningPaths() {
         <p className='w-[70%] text-gray text-2xl text-center mx-auto'>Hemos seleccionado específicamente estas rutas debido a que son de las áreas más demandadas en la industria tecnológica</p>
       </div>
 
-      <div className="w-full grid grid-cols-3 gap-6">
+      <div className="w-full grid grid-cols-2 gap-6">
         <Path nameRoute="Desarrollo Front-End" />
         <Path nameRoute="Desarrollo Back-End" />
         <Path nameRoute="Análisis de Datos" />

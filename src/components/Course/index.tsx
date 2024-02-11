@@ -2,19 +2,17 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-import testImage from '../../images/test.png';
-import { AppContext } from '../../AppContext';
 import { TbBrandPython } from "react-icons/tb";
+import { AppContext } from '../../AppContext';
 
 type Props = {
   id: number;
   name: string;
   origin: string | undefined;
-  popularity: string | undefined;
   dificulty: string;
 };
 
-function Course({ id, name, origin, popularity, dificulty }: Props) {
+function Course({ id, name, origin, dificulty }: Props) {
   const { setCourse } = useContext(AppContext);
   const navigate = useNavigate();
 
@@ -48,6 +46,10 @@ function Course({ id, name, origin, popularity, dificulty }: Props) {
     <div 
       className='relative w-full min-h-[100px] rounded-md overflow-hidden cursor-pointer hover:bg-bgGreen'
       style={styleBlock}
+      onClick={() => {
+        navigate('/courses/video');
+        setCourse(id);
+      }}
     >
       <div>
         <h2 className="font-bold text-xl text-white tracking-wider bg-bgGreen border-b border-green p-4">

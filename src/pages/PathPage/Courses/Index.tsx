@@ -1,29 +1,24 @@
-import { IoIosArrowForward } from 'react-icons/io';
 import Course from '../../../components/Course';
 import { data } from '../../../data/courses.json';
 
 function Courses() {
+  
   return (
     <div className="relative max-w-[1200px] w-full py-5 mx-auto overflow-hidden">
-      <div className='flex justify-between items-center bg-hoverDarkBlue border-b-2 border-b-blue p-3 mb-5 rounded-lg'>
-        <h2 className="font-bold text-white text-4xl">
-          Nivel Básico
+      <div className='flex flex-col items-center mb-5 border-b border-hoverGray pb-4'>
+        <hr className="w-[150px] border-b-2 border-green my-4" />
+        <h2 className="text-center font-bold text-white text-5xl mb-2">
+          Cursos Fundamentales
         </h2>
-        <p className="flex items-center font-bold text-blue text-lg cursor-pointer hover:text-hoverBlue">
-          Presentar Examen{' '}
-          <span>
-            <IoIosArrowForward />
-          </span>
-        </p>
+        <p className='text-gray text-center text-md'>Los siguientes cursos formarán las bases requeridas para adentrarte en temas más avanzados</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-6 bg-hoverDarkBlue p-5 rounded-lg">
+      <div className="grid grid-cols-3 gap-6 rounded-lg pt-4 pb-10">
         {data.map((course) => (
           <Course
             id={course.id}
             name={course.name}
             origin={course.origin}
-            popularity={course.popularity}
             dificulty={course.dificulty}
           />
         ))}

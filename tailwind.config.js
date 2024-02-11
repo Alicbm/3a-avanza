@@ -20,7 +20,7 @@ module.exports = {
         'green': '#42946E',
         'bgGreen': '#0E1824',
         'blue': '#8CAEF2',
-        'bgBlue': '#161b2d',
+        'bgBlue': '#14182E',
       }
     },
     fontFamily: {

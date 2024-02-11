@@ -1,54 +1,58 @@
 import { FaUserCircle, FaLinkedin, FaGithub } from 'react-icons/fa';
-import { styles } from '../../styles';
 
 function Footer() {
   return (
-    <footer
-      className="relative w-full h-[60vh] bg-hoverDarkBlue text-white font-md pt-[50px]"
-      style={styles}
-    >
-      <div className="w-[80%] max-w-[1200px] grid grid-cols-7 gap-10 mx-auto">
-        <div className="col-span-2">
-          <div className="text-5xl font-title text-blue mb-4">AAA</div>
-          <p className="leading-8">
-            <strong>3A Avanza: Accede, Aprende, Avanza.</strong> Tu camino hacia
-            el desarrollo profesional sin barreras, donde el conocimiento es
-            libre y el progreso es constante
+    <footer className="w-full text-white bg-black font-md tracking-wider">
+      <div className="py-14">
+        <div className="w-[30%] mx-auto mb-4">
+          <h4 className="text-center text-xl leading-[50px] text-green font-bold tracking-wider">
+            Accede, Aprende, Avanza
+          </h4>
+          <p className="text-md text-center leading-8 tracking-wider">
+            Desarrollo sin barreras, aprendizaje sin costo
           </p>
         </div>
-        <div className="grid place-content-center col-span-2">
-          <h2 className="text-5xl font-title mb-4">Rutas</h2>
-          <ul>
-            <li className="list-disc leading-8">Desarrollo Front-End</li>
-            <li className="list-disc leading-8">Desarrollo Back-End</li>
-            <li className="list-disc leading-8">Análisis de Datos</li>
-            <li className="list-disc leading-8">Manejo de Bases de Datos</li>
-            <li className="list-disc leading-8">Pensamiento Lógico</li>
-          </ul>
-        </div>
-        <div className="grid place-content-center col-span-2">
-          <h2 className="text-5xl font-title mb-4">Cursos</h2>
-          <ul>
-            <li className="list-disc leading-8">Cursos de Javascript</li>
-            <li className="list-disc leading-8">Cursos de Python</li>
-            <li className="list-disc leading-8">Cursos de MySQL</li>
-            <li className="list-disc leading-8">Curso de Exce</li>
-          </ul>
-          <p className="text-blue text-sm leading-8">Ver todos los cursos...</p>
-        </div>
-        <div className="h-[100%] grid place-content-center gap-6 col-span-1">
-          <span className="text-[35px] text-blue">
-            <FaUserCircle />
-          </span>
-          <span className="text-[35px] text-blue">
-            <FaLinkedin />
-          </span>
-          <span className="text-[35px] text-blue">
-            <FaGithub />
-          </span>
+
+        <p className="text-[14px] text-gray text-center mb-6">
+          Todos los derechos reservados
+        </p>
+
+        <div className="flex justify-center items-center gap-6 text-blue">
+          <button
+            className="flex justify-center items-center border gap-2 border-blue text-blue py-2 px-4 rounded-md z-10 hover:bg-darkBlue"
+            type="button"
+            style={{ boxShadow: '#0E1824 0px 4px 24px' }}
+          >
+            <p>Linkedin</p>
+            <span className="text-xl">
+              <FaLinkedin />
+            </span>
+          </button>
+
+          <button
+            className="flex justify-center items-center border gap-2 border-green text-green py-2 px-4 rounded-md z-10 hover:bg-bgGreen"
+            type="button"
+            style={{ boxShadow: '#0E1824 0px 4px 24px' }}
+          >
+            <p>Portafolio</p>
+            <span className="text-xl">
+              <FaUserCircle />
+            </span>
+          </button>
+
+          <button
+            className="flex justify-center items-center border gap-2 border-purple text-purple py-2 px-4 rounded-md z-10 hover:bg-darkBlue"
+            type="button"
+            style={{ boxShadow: '#120F27 0px 4px 24px' }}
+          >
+            <p>GitHub</p>
+            <span className="text-xl">
+              <FaGithub />
+            </span>
+          </button>
         </div>
       </div>
-      <div className="absolute left-0 right-0 bottom-0 border-t-2 border-t-blue py-5">
+      <div className="border-t-2 border-t-blue py-5">
         <p className="text-center">
           Diseñado y Desarrollado por{' '}
           <span className="text-blue">
