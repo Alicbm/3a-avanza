@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
@@ -10,8 +9,8 @@ type Props = {
   list: string[];
   name: string;
   valueList: string
-  setItem: (arg: string) => void;
-  setValueList: (arg: string) => void
+  setItem: Function
+  setValueList: Function
 };
 
 function FilterList({ name, list, setItem, valueList, setValueList }: Props) {
