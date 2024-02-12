@@ -44,21 +44,21 @@ function Course({ id, name, origin, dificulty }: Props) {
     // </div>
   
     <div 
-      className='relative w-full min-h-[100px] rounded-md overflow-hidden cursor-pointer hover:bg-bgGreen'
-      style={styleBlock}
+      className='relative w-full min-h-[100px] bg-bgGreen rounded-md overflow-hidden cursor-pointer hover:bg-bgGreen'
+      // style={styleBlock}
       onClick={() => {
         navigate('/courses/video');
         setCourse(id);
       }}
     >
       <div>
-        <h2 className="font-bold text-xl text-white tracking-wider bg-bgGreen border-b border-green p-4">
+        <h2 className="text-xl text-white bg-bgGreen border-b border-green p-4">
           {name}
         </h2>
       </div>
       <div className='grid p-4'>
-        <p className='font-bold text-white text-lg tracking-wider mb-1'>{origin} - {dificulty}</p>
-        <p className='font-bold text-green text-md mb-1'>Desarrollo Web</p>
+        <p className='text-white text-lg tracking-wide mb-1'>{origin} - {dificulty}</p>
+        <p className='text-green text-md mb-1'>Desarrollo Web</p>
         <p className='text-gray text-md text-justify mb-1'>Hemos seleccionado específicamente estas rutas debido a que son de las áreas más demandadas en la industria tecnológica</p>
       </div>
         <div className='absolute -bottom-4 -right-2 flex justify-center items-center w-[120px] h-[120px] text-[#9fc426] text-[80px] border-2 border-green rounded-[50%] opacity-[.2]'>

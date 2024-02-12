@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react';
+import { IoSearchOutline } from "react-icons/io5";
 
 type Props = {
   placeholder: string;
@@ -27,19 +28,24 @@ function InputSearch({
 
   return (
     <form
-      className="h-auto py-50"
+      className="max-w-[1000px] w-full gap-[2px] mx-auto py-50"
       onSubmit={(e) => {
         e.preventDefault();
         handleSubmit();
       }}
     >
-      <div className="max-w-[800px] w-[80%] grid place-content-center grid-cols-8 gap-[2px] mx-auto">
-        <div className="relative col-span-7 h-[45px]">
+      <div className="grid place-content-center grid-cols-8 bg-bgGreen rounded-md">
+        <div className="relative flex items-center col-span-7 h-[50px]">
+          <div className='px-4'>
+            <span className='text-gray text-xl'>
+              <IoSearchOutline />
+            </span>
+          </div>
           <input
             type="text"
             placeholder={placeholder}
             value={test}
-            className="w-full h-full px-4 text-lg text-darkBlue font-bold bg-white outline-none rounded-tl-md rounded-bl-md"
+            className="w-full h-full text-md text-white bg-transparent px-2 outline-none rounded-tl-md rounded-bl-md"
             onChange={(e) => {
               setTest(e.target.value);
               setSimilarSearch(e.target.value);
@@ -67,8 +73,7 @@ function InputSearch({
         </div>
         <button
           type="submit"
-          className="col-span-1 text-white font-bold text-lg w-full h-[45px] bg-blue rounded-tr-md rounded-br-md hover:bg-hoverBlue"
-          // className="col-span-1 text-blue font-bold text-lg w-full h-[45px] border border-blue rounded-tr-md rounded-br-md hover:bg-hoverBlue"
+          className="col-span-1 text-bgGreen text-md font-bold h-full bg-green rounded-tr-md rounded-br-md"
         >
           Buscar
         </button>
