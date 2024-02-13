@@ -1,16 +1,10 @@
-import Courses from "./Courses/Index"
-import FrontPage from "./FrontPage"
+import { styleBackbround } from "./styles"
+import Courses from "./components/Courses/Index"
+import FrontPage from "./components/FrontPage"
 
 function PathPage () {
-  
-  const style = {
-    opacity: 1,
-    backgroundImage: 'radial-gradient(#0E1824 1.2px, #070717 1.2px)',
-    backgroundSize: '25px 25px',
-  };
-
   return (
-    <div className='bg-black' style={style}>
+    <div style={styleBackbround}>
       <div> 
         <FrontPage />
       </div>

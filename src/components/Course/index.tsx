@@ -3,7 +3,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { TbBrandPython } from "react-icons/tb";
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context';
 
 type Props = {
   id: number;

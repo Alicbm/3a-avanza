@@ -1,9 +1,9 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import { useContext, useState } from 'react';
 import { TbBrandPython } from 'react-icons/tb';
-import { AppContext } from '../../AppContext';
-import jsIcon from '../../icons/js.png';
+import { AppContext } from '../../context';
 import ModalExam from '../ModalExam';
-import SecondaryButton from '../SecondaryButton';
 import MainButton from '../MainButton';
 
 type Props = {
@@ -17,7 +17,7 @@ function Exam({ id, name, dificulty }: Props) {
   const [modal, setModal] = useState(false);
 
   const styleBlock = {
-    boxShadow: 'rgba(140, 174, 242, .20) 0px 4px 24px',
+    boxShadow: 'rgba(140, 174, 242, .10) 0px 4px 24px',
     border: `solid 1px #8CAEF2`
   }
 
@@ -49,6 +49,10 @@ function Exam({ id, name, dificulty }: Props) {
     <div 
       className='relative grid gap-1 w-full min-h-[100px] rounded-md overflow-hidden cursor-pointer'
       style={styleBlock}
+      onClick={() => {
+              setModal(true);
+              setExam(id);
+            }}
     >
       <div className="bg-darkBlue p-4 hover:bg-bgBlue">
         <div className="pl-2">
@@ -71,6 +75,8 @@ function Exam({ id, name, dificulty }: Props) {
           }}
         />
       </div>
+
+      {modal && <ModalExam modal={modal} setModal={setModal} />}
     </div>
   );
 }

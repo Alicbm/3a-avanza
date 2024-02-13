@@ -26,7 +26,8 @@ function AllExercises() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="flex flex-wrap items-start gap-4 mb-4">
+        {/* <div className='w-[45%]'> */}
         {
           data[0].javascript.map((item, index) => (
             <Exercise 
@@ -35,6 +36,7 @@ function AllExercises() {
             />
           ))
         }
+        {/* </div> */}
       </div>
     </div>
   );

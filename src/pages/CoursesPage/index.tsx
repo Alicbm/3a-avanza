@@ -1,8 +1,9 @@
 import { useSearchCourses } from '../../hooks/useSearchCourses';
 import { data } from '../../data/courses.json';
 import InputSearch from '../../components/InputSearch';
-import AllCourses from './AllCourses';
+import AllCourses from './components/AllCourses';
 import GroupFilterList from './components/GroupFilterList';
+import { colors } from '../../styles/colors';
 
 function CoursesPage() {
   const {
@@ -31,25 +32,18 @@ function CoursesPage() {
           search={search}
         />
       </div>
-      <div className="grid gap-10 bg-hoverDarkBlue px-10 py-10">
-        <div>
-          <h2 className="text-white font-bold tracking-wider text-[50px] mb-2">
-            <span className="text-green">A</span>ccede a todos los{' '}
-            <span className="text-green">cursos</span>
-          </h2>
-          <p className="text-gray">
-            Tenemos más de 200 cursos repartidos en diferentes áreas como serían
-            desarrollo we, analisis de datos, bases de datos y muchas más.
-          </p>
-        </div>
+      <div>
+        <AllCourses filteredCourses={dataFiltered} search={search}>
           <InputSearch
             placeholder="Burcar Cursos..."
             setSearch={setSearch}
             setSimilarSearch={setSimilarSearch}
             similarSearch={similarSearch}
             listSimilarSearches={resultNamesSearched}
+            color={colors.green}
+            bgColor={colors.bgGreen}
           />
-        <AllCourses filteredCourses={dataFiltered} search={search} />
+        </AllCourses>
       </div>
     </div>
   );

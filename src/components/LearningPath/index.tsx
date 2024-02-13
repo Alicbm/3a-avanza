@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { CiCircleCheck, CiCirclePlus } from 'react-icons/ci';
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context';
 import SecondaryButton from '../SecondaryButton';
 import MainButton from '../MainButton';
 

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AppContext } from '../../../AppContext';
+import { AppContext } from '../../../context';
 import { useLearningPath } from '../../../hooks/useLearningPath';
 import MainButton from '../../../components/MainButton';
 import SecondaryButton from '../../../components/SecondaryButton';

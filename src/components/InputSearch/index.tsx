@@ -1,13 +1,15 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable react/require-default-props */
 import { useState } from 'react';
 import { IoSearchOutline } from "react-icons/io5";
 
 type Props = {
   placeholder: string;
-  setSearch: (arg: string) => void;
-  setSimilarSearch: (arg: string) => void;
+  setSearch: Function
+  setSimilarSearch: Function
   listSimilarSearches: string[];
   similarSearch: string;
+  color?: string;
+  bgColor?: string;
 };
 
 function InputSearch({
@@ -16,6 +18,8 @@ function InputSearch({
   listSimilarSearches,
   setSimilarSearch,
   similarSearch,
+  color,
+  bgColor
 }: Props) {
   const [modalSearch, setModalSearch] = useState(true);
   const [test, setTest] = useState('');
@@ -34,7 +38,7 @@ function InputSearch({
         handleSubmit();
       }}
     >
-      <div className="grid place-content-center grid-cols-8 bg-bgGreen rounded-md">
+      <div className="grid place-content-center grid-cols-8 bg-bgGreen rounded-md" style={{ background: bgColor }}>
         <div className="relative flex items-center col-span-7 h-[50px]">
           <div className='px-4'>
             <span className='text-gray text-xl'>
@@ -74,6 +78,7 @@ function InputSearch({
         <button
           type="submit"
           className="col-span-1 text-bgGreen text-md font-bold h-full bg-green rounded-tr-md rounded-br-md"
+          style={{ background: color }}
         >
           Buscar
         </button>

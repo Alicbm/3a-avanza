@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import MainButton from '../../../components/MainButton';
 import SecondaryButton from '../../../components/SecondaryButton';
 import TextFormat from './TextFormat';
-import { AppContext } from '../../../AppContext';
+import { AppContext } from '../../../context';
 import { useCourses } from '../../../hooks/useCourses';
 
 function Video() {

@@ -1,20 +1,13 @@
-import CoursesHome from './CoursesHome';
-import Description from './Description';
-import Exams from './Exams';
-import FrontPage from './FrontPage';
-import Introduction from './Introduction';
-import LearningPaths from './LearningPaths';
+import CoursesHome from './components/CoursesHome';
+import Description from './components/Description';
+import Exams from './components/Exams';
+import FrontPage from './components/FrontPage';
+import Introduction from './components/Introduction';
+import LearningPaths from './components/LearningPaths';
 import bgInitialPage from '../../images/bgInitialPage.png'
 import { styleBG } from '../../styles';
 
 function HomePage() {
-  // const styleFrontPage = {
-  //   with: '100%',
-  //   backgroundImage: `url(${bgInitialPage})`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  //   backgroundRepeat: 'no-repeat',
-  // }
 
   const styleLearningPath = {
     background: 'linear-gradient(15deg, #070717, #070717, #070717, #070717, #120F27)'

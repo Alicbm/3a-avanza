@@ -6,7 +6,7 @@ import ExamsResultPage from './components/Results';
 import Questions from './components/Questions';
 import FrontPage from './components/Results/FrontPage';
 import ChosenAnswer from './components/Results/ChosenAnswer';
-import { AppContext } from '../../AppContext';
+import { AppContext } from '../../context';
 
 const initialOptions: ChosenOptions = {};
 for (let i = 1; i <= 15; i++) {
