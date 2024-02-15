@@ -5,6 +5,7 @@ import { TbBrandPython } from 'react-icons/tb';
 import { AppContext } from '../../context';
 import ModalExam from '../ModalExam';
 import MainButton from '../MainButton';
+import { styleBlock } from './styles';
 
 type Props = {
   id: number;
@@ -16,47 +17,22 @@ function Exam({ id, name, dificulty }: Props) {
   const { setExam } = useContext(AppContext);
   const [modal, setModal] = useState(false);
 
-  const styleBlock = {
-    boxShadow: 'rgba(140, 174, 242, .10) 0px 4px 24px',
-    border: `solid 1px #8CAEF2`
-  }
-
   return (
-    // <div className="grid gap-2 bg-hoverDarkBlue p-2 rounded-md">
-    //   <div className="w-full">
-    //     <img
-    //       src={jsIcon}
-    //       alt={name}
-    //       className="w-full h-[120px] object-cover"
-    //     />
-    //   </div>
-    //   <div className="pl-2">
-    //     <h4 className="font-title text-white text-2xl">{name}</h4>
-    //     <p className="text-white">{dificulty}</p>
-    //   </div>
-
-    //   <SecondaryButton
-    //     text="Tomar Curso"
-    //     className="w-full"
-    //     onClick={() => {
-    //       setModal(true);
-    //       setExam(id);
-    //     }}
-    //   />
-
-    //   {modal && <ModalExam modal={modal} setModal={setModal} />}
-    // </div>
-    <div 
-      className='relative grid gap-1 w-full min-h-[100px] rounded-md overflow-hidden cursor-pointer'
+    <div
+      className="relative grid gap-1 w-full min-h-[100px] rounded-md overflow-hidden"
       style={styleBlock}
-      onClick={() => {
-              setModal(true);
-              setExam(id);
-            }}
     >
-      <div className="bg-darkBlue p-4 hover:bg-bgBlue">
+      <div 
+        className="bg-darkBlue p-4 hover:bg-bgBlue cursor-pointer"
+        onClick={() => {
+          setModal(!modal);
+          setExam(id);
+        }}
+      >
         <div className="pl-2">
-          <h4 className="font-bold text-blue text-xl tracking-wider mb-1">{name}</h4>
+          <h4 className="font-bold text-blue text-xl tracking-wider mb-1">
+            {name}
+          </h4>
           <p className="font-bold text-white tracking-wider">Desarrollo Web</p>
           <p className="text-white">{dificulty}</p>
         </div>
@@ -70,7 +46,7 @@ function Exam({ id, name, dificulty }: Props) {
           text="Tomar Examen"
           className="w-full text-blue bg-bgBlue rounded-none"
           onClick={() => {
-            setModal(true);
+            setModal(!modal);
             setExam(id);
           }}
         />

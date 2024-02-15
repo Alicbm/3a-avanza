@@ -1,25 +1,39 @@
+import { colors } from '../../../styles/colors';
+
 export const styleTitle = {
   fontSize: '60px',
   WebkitTextFillColor: 'transparent',
-  background: 'linear-gradient(to right, #6f3a88, #42946E)',
+  background: `linear-gradient(to right, ${colors.purple}, ${colors.green})`,
   backgroundSize: 'cover',
   WebkitBackgroundClip: 'text',
-}
+};
 
 export const styleRouteItem = {
-  boxShadow: 'rgba(111, 58, 136, 0.20) 0px 4px 24px',
-  border: `solid 1px #6f3a88`,
-  background: 'linear-gradient(10deg, #070717, #120F27)',
+  boxShadow: `${colors.bgPurple} 0px 4px 24px`,
+  border: `solid 1px ${colors.purple}`,
+  background: `linear-gradient(10deg, ${colors.secondaryDarkBlue}, ${colors.bgPurple})`,
 };
 
 export const styleCourseItem = {
-  boxShadow: 'rgba(66, 148, 110, 0.20) 0px 4px 24px',
-  border: `solid 1px #42946E`,
-  background: 'linear-gradient(10deg, #070717, #0E1824)',
+  boxShadow: `${colors.bgGreen} 0px 4px 24px`,
+  border: `solid 1px ${colors.green}`,
+  background: `linear-gradient(10deg, ${colors.secondaryDarkBlue}, ${colors.bgGreen})`,
 };
 
 export const styleExcerciseItem = {
-  boxShadow: 'rgba(140, 174, 242, .10) 0px 4px 24px',
-  border: `solid 1px #8CAEF2`,
-  background: 'linear-gradient(10deg, #070717, #1B2036)',
+  boxShadow: `${colors.blue} 0px 4px 24px`,
+  border: `solid 1px ${colors.blue}`,
+  background: `linear-gradient(10deg, ${colors.secondaryDarkBlue}, ${colors.bgBlue})`,
+};
+
+export const styleLearningPathBG = {
+  background: `linear-gradient(15deg, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.bgPurple})`,
+};
+
+export const styleCoursesBG = {
+  background: `linear-gradient(15deg, ${colors.hoverDarkBlue}, ${colors.hoverDarkBlue}, ${colors.hoverDarkBlue}, ${colors.hoverDarkBlue}, ${colors.bgGreen})`,
+};
+
+export const styleExamsBG = {
+  background: `linear-gradient(15deg, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.secondaryDarkBlue}, ${colors.bgBlue})`,
 };

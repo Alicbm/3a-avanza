@@ -1,16 +1,10 @@
+import { styleBG } from './styles';
 import Path from '../../components/LearningPath';
 import SecondaryButton from '../../components/SecondaryButton';
 
 function LearningPaths() {
-  const style = {
-    backgroundColor: '#060513',
-    opacity: 1,
-    backgroundImage: 'radial-gradient(#120F27 1.2px, #070717 1.2px)',
-    backgroundSize: '25px 25px',
-  };
-
   return (
-    <div className="w-full py-20" style={style}>
+    <div className="w-full py-20" style={styleBG}>
       <div className="grid items-center gap-20 max-w-[1200px] w-full mx-auto">
         <div className="flex flex-col items-center justify-center">
           <h2 className="w-[90%] font-bold text-[65px] text-center text-white mx-auto mb-4">

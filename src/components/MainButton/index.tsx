@@ -11,7 +11,7 @@ type Props = {
 function MainButton({ text, className, onClick, style }: Props) {
   return (
     <button
-      className={`${className} flex justify-center items-center text-white py-2 px-4 rounded-md z-10 hover:opacity-[0.8]`}
+      className={`${className} flex justify-center items-center text-white py-2 px-4 rounded-md hover:opacity-[0.8]`}
       onClick={onClick}
       style={style}
       type='button'

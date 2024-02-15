@@ -16,7 +16,6 @@ for (let i = 1; i <= 15; i++) {
 function ExamPage() {
   const [showResults, setShowResults] = useState(false);
 
-  // const [exam, setExam] = useState(1);
   const { exam } = useContext(AppContext)
   const [position, setPosition] = useState(0);
 
@@ -24,8 +23,6 @@ function ExamPage() {
   useState<ChosenOptions>(initialOptions);
 
   const { findExam } = useExams(exam);
-
-
 
   return (
     <div>

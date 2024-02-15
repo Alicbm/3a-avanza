@@ -1,3 +1,5 @@
+import { styleCoursesBG, styleExamsBG, styleLearningPathBG } from './styles';
+import { styleBG } from '../../styles';
 import CoursesHome from './components/CoursesHome';
 import Description from './components/Description';
 import Exams from './components/Exams';
@@ -5,21 +7,8 @@ import FrontPage from './components/FrontPage';
 import Introduction from './components/Introduction';
 import LearningPaths from './components/LearningPaths';
 import bgInitialPage from '../../images/bgInitialPage.png'
-import { styleBG } from '../../styles';
 
 function HomePage() {
-
-  const styleLearningPath = {
-    background: 'linear-gradient(15deg, #070717, #070717, #070717, #070717, #120F27)'
-  }
-
-  const styleCourses = {
-    background: 'linear-gradient(15deg, #080a1c, #080a1c, #080a1c, #080a1c, #080a1c, #0E1824)'
-  }
-
-  const styleExams = {
-    background: 'linear-gradient(15deg, #070717, #070717, #070717, #070717, #070717, #14182E)'
-  }
 
   return (
     <section>
@@ -35,13 +24,13 @@ function HomePage() {
       <div>
         <Description />
       </div>
-      <div style={styleLearningPath}>
+      <div style={styleLearningPathBG}>
         <LearningPaths />
       </div>
-      <div style={styleCourses}>
+      <div style={styleCoursesBG}>
         <CoursesHome />
       </div>
-      <div style={styleExams}>
+      <div style={styleExamsBG}>
         <Exams />
       </div>
     </section>

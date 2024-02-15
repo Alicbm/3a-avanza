@@ -19,7 +19,7 @@ function Footer() {
 
         <div className="flex justify-center items-center gap-6 text-blue">
           <button
-            className="flex justify-center items-center border gap-2 border-blue text-blue py-2 px-4 rounded-md z-10 hover:bg-darkBlue"
+            className="flex justify-center items-center border gap-2 border-blue text-blue py-2 px-4 rounded-md hover:bg-darkBlue"
             type="button"
             style={{ boxShadow: '#0E1824 0px 4px 24px' }}
           >
@@ -30,7 +30,7 @@ function Footer() {
           </button>
 
           <button
-            className="flex justify-center items-center border gap-2 border-green text-green py-2 px-4 rounded-md z-10 hover:bg-bgGreen"
+            className="flex justify-center items-center border gap-2 border-green text-green py-2 px-4 rounded-md hover:bg-bgGreen"
             type="button"
             style={{ boxShadow: '#0E1824 0px 4px 24px' }}
           >
@@ -41,7 +41,7 @@ function Footer() {
           </button>
 
           <button
-            className="flex justify-center items-center border gap-2 border-purple text-purple py-2 px-4 rounded-md z-10 hover:bg-darkBlue"
+            className="flex justify-center items-center border gap-2 border-purple text-purple py-2 px-4 rounded-md hover:bg-darkBlue"
             type="button"
             style={{ boxShadow: '#120F27 0px 4px 24px' }}
           >
