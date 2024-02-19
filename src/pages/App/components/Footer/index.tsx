@@ -2,7 +2,7 @@ import { FaUserCircle, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="w-full text-white bg-black font-md tracking-wider">
+    <footer className="relative w-full text-white bg-black font-md tracking-wider">
       <div className="py-14">
         <div className="w-[30%] mx-auto mb-4">
           <h4 className="text-center text-xl leading-[50px] text-green font-bold tracking-wider">

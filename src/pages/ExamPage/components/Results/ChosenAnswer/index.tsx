@@ -1,5 +1,7 @@
+/* eslint-disable react/self-closing-comp */
 import { FaRegCircleCheck, FaRegCircleXmark } from 'react-icons/fa6';
 import { ChosenOptions, ExamsIT } from '../../../../../types';
+import MainButton from '../../../../../components/MainButton';
 
 type Props = {
   findExam: ExamsIT | undefined;
@@ -8,24 +10,15 @@ type Props = {
 
 function Results({ findExam, chosenOption }: Props) {
   return (
-    <div className="max-w-[1200px] w-full py-10 mx-auto overflow-hidden">
-      <h2 className="font-title text-white text-5xl mb-5">Tus Respuestas</h2>
-
+    <div className="max-w-[1200px] w-full py-10 mx-auto rounded-md overflow-hidden">
       {findExam?.exams.map((item) => (
-        <div key={item.id} className="border-b border-hoverGray pb-6 mb-8">
-          <h3 className="text-gray text-xl font-bold mb-4">
-            <span className="text-blue">{item.id}.</span> {item?.question}
+        <div key={item.id} className="border-b border-purple pb-6 mb-8">
+          <h3 className="text-gray text-xl px-4 mb-4">
+            {item.id}. {item?.question}
           </h3>
-          <div
-            className={`flex justify-between items-center min-h-[60px] border-2 rounded-lg px-4 ${
-              chosenOption[item.id] ===
-              findExam.exams[item.id - 1].correctAnswer
-                ? 'border-green'
-                : 'border-red'
-            }`}
-          >
+          <div className="relative flex justify-between items-center min-h-[60px] bg-bgPurple rounded-lg px-4 overflow-hidden">
             <p className="text-white">{chosenOption[item.id]}</p>
-            <span className="text-5xl text-green">
+            <span className="absolute right-0 text-[80px] text-purple opacity-[50%]">
               {chosenOption[item.id] ===
               findExam.exams[item.id - 1].correctAnswer ? (
                 <FaRegCircleCheck color="#006600" />
@@ -36,6 +29,10 @@ function Results({ findExam, chosenOption }: Props) {
           </div>
         </div>
       ))}
+
+      <div className='flex justify-end gap-4'>
+        <MainButton text='Continuar Aprendiendo' className='w-[300px] h-[50px] bg-purple'/>
+      </div>
     </div>
   );
 }

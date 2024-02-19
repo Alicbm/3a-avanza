@@ -98,7 +98,7 @@ function Questions({
             }
             className={
               findExam?.exams[position].id === findExam?.exams.length
-                ? 'w-[250px] h-[45px] rounded-lg bg-green'
+                ? 'w-[250px] h-[45px] rounded-lg bg-bgGreen border border-green'
                 : 'w-[250px] h-[45px] rounded-lg bg-purple'
             }
             onClick={handleSubmit}

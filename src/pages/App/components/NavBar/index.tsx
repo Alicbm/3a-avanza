@@ -36,7 +36,7 @@ function NavBar() {
   const [active, setActive] = useState('Inicio');
 
   return (
-    <nav className="h-[70px] max-w-[1200px] flex justify-between items-center mx-auto">
+    <nav className="relative h-[70px] max-w-[1200px] flex justify-between items-center mx-auto z-10">
       <div className="w-[30%] text-gray font-title text-3xl">AAA</div>
       <ul className="w-[60%] flex justify-center items-center">
         {routes.map((route) => (
